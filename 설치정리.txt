@@ -1,0 +1,199 @@
+1. Windows를 재부팅해 주세요 (저장 안 된 작업 먼저 저장).
+2. 재부팅 후 이 프로젝트에서 Claude Code를 다시 열고 "WSL 이어서" 라고 말씀해 주세요.
+3. 그럼 제가 wsl --install -d Ubuntu-24.04 재실행 → 계정 설정 → Docker 설치/검증까지 이어서 진행합니다.
+-----
+
+wsl --install --no-distribution
+
+→ 재부팅 → wsl --install -d Ubuntu → Docker Desktop(WSL2 backend).
+
+------
+
+후속 실험을 완료하고 논문 보완본에 반영했습니다. 이번에는 안전한 서버에서 요청 이력의 효과와 AI의 판별 능력을 분리해 평가했습니다.
+
+24개 에피소드, 실제 HTTP 요청 120건을 실행했습니다.
+
+| 판별 방식 | 정답 | 기법 변경 사례 탐지 |
+|---|---:|---:|
+| Qwen — 현재 요청만 | 12/24 | 0/12 |
+| 단순 이력 규칙 | 20/24 | 8/12 |
+| 강화된 이력 규칙 | 24/24 | 12/12 |
+| Qwen — 전체 이력 | 14/24 | 2/12 |
+| Qwen 기법 분류 + 시간 규칙* | 24/24 | 12/12 |
+
+* 마지막 구성은 주 실험 결과를 확인한 뒤 같은 자료로 수행한 사후 탐색입니다.
+
+논문에 추가할 핵심 발견은 다음과 같습니다.
+
+- 이력이 필요해도 AI가 이를 정확히 활용한다는 보장은 없었습니다.
+- AI에 최종 판단을 모두 맡기는 방식보다, 기법 분류와 사건 순서 판정을 분리하는 구조를 후속 검증할 근거가 생겼습니다.
+- 강화된 규칙도 같은 좋은 결과를 냈으므로 AI의 필요성이나 우월성은 입증되지 않았습니다.
+
+현재 요청을 같게 만든 소규모 대조 실험이므로 위 수치를 운영 환경의 정확도로 일반화하면 안 됩니다. 이 제한과 사후 탐색 여부를 원고에 명시했습니다.
+
+- 통합 논문 보완본 열기
+- 편집 가능한 후속 실험 원고 (/C:/codex_qwen_pentest/research/BEHAVIOR_STUDY.md)
+- 결과 그래프 (/C:/codex_qwen_pentest/research/results/behavior_context_results.png)
+
+테스트 31개와 원시 기록·집계 대조를 통과했습니다. 기존 실험과 원본 논문도 보존했습니다. 다음 확인 과제는 현재 규칙·프롬프트를 고정하고, 독립적으로 작성한 새로운 시나리오에서 분리 구조의 효과가 유지되는지 검증하는 것입니다.
+------------------------
+
+CLAUDE.md의 ⑯단계에 최신 진행률(71/180)과 재시작 방법을 기록해뒀습니다. 다음에 이어서 하실 때는 이렇게 하시면 됩니다.
+
+1. 남은 qwen T2 마무리 (PC/터미널이 꺼져서 백그라운드 프로세스가 죽었을 경우만 필요 — 켜져 있었다면 이미 끝나 있을 수 있음)
+cd paper/eval/review
+python run_terms.py --cond T2 --model qwen14b-16k --base-url http://localhost:11434/v1 --reps 1 --workers 4
+(이미 끝난 케이스는 건너뛰고 남은 것만 돕니다. ls results/terms/qwen14b-16k/T2 | wc -l로 180이 됐는지 먼저 확인하면 됩니다.)
+
+2. 전체 리포트 생성
+python score_terms.py --models gpt-4o gpt-4o-mini qwen14b-16k
+
+3. 문서 반영
+- paper/data/terms_profile_verification.md의 예비 결과 표에 qwen 행 추가
+- paper/draft/main_draft_v2_outline.md 6장 "별도 보조 실험" 행에 qwen 결과 반영
+- 이 실험(약관 조건부 심사)을 본문 RQ1~4 틀에 별도 절로 쓸지 RQ2에 편입할지는 아직 미결정 — 다음에 같이 정해야 함
+
+다음에 "이어서 진행해줘"라고 말씀해주시면 이 순서대로 바로 진행하겠습니다.
+
+--------------------------------
+진행 상황과 다음 단계를 RESUME.md (RESUME.md)에 저장했습니다.
+
+재부팅 후 **“RESUME.md 참고해서 이어서 진행해 줘”**라고 말씀해 주세요. Ubuntu 설치 확인 → Docker 설치 → microVM 지원 확인 → 실험 순서로 이어가겠습니다.
+---------------------------
+
+ Browsing the web
+• Opened https://docs.docker.com/desktop/setup/install/windows-install/
+좋습니다. Docker Desktop → Ubuntu/WSL2 확인 → KVM 확인 → Firecracker microVM 준비 순서로 진행하면 됩니다. 지금은 설치 준비까지만 하고, 환경이 갖춰지면 실험을 재개하겠습니다.
+
+현재 확인된 상태는 Docker 명령을 사용할 수 없고 WSL도 설치가 필요한 상태입니다.
+
+1. WSL2와 Ubuntu 설치
+
+Windows 작업 관리자 → 성능 → CPU에서 가상화: 사용인지 확인하세요. 사용 안 함이면 BIOS/UEFI에서 Intel VT-x 또는 AMD-V를 활성화해야 합니다.
+
+관리자 PowerShell에서 실행합니다.
+
+wsl --install -d Ubuntu-24.04
+
+설치 안내에 따라 재부팅한 다음 Ubuntu를 열어 Linux 사용자 이름과 비밀번호를 만드세요. 이어서 PowerShell에서 확인합니다.
+
+wsl --update
+wsl --version
+wsl --list --verbose
+
+Ubuntu의 VERSION이 2여야 합니다. 1이면 다음을 실행합니다.
+
+wsl --set-version Ubuntu-24.04 2
+
+Microsoft WSL 설치 안내
+
+2. Docker Desktop 설치
+
+Docker Desktop Windows 공식 설치 페이지에서 PC 아키텍처에 맞는 설치 파일을 받습니다. 일반적인 Intel·AMD PC는 x86_64입니다.
+
+설치 후 Docker Desktop을 실행하고 다음을 확인하세요.
+
+- Linux 컨테이너 사용
+- Settings → General에서 WSL2 엔진 사용
+- Settings → Resources → WSL Integration에서 Ubuntu 연동 활성화
+
+설정 항목은 설치 버전에 따라 조금 다를 수 있습니다. 새 PowerShell 창에서 아래를 실행합니다.
+
+docker version
+docker compose version
+docker run --rm hello-world
+
+docker version에 Client와 Server 정보가 모두 나오고, hello-world가 정상 출력되면 기본 준비가 끝난 것입니다. 최초 실행은 이미지를 내려받기 위해 인터넷을 사용합니다. 공격 실험의 외부 통신 차단은 이후 실험 네트워크에 별도로 적용합니다.
+
+3. microVM용 KVM 사용 가능 여부 확인
+
+microVM은 제품명이 아니라 경량 가상머신 방식입니다. 이번에는 Firecracker를 후보로 사용하겠습니다. Firecracker는 Linux와 읽기·쓰기가 가능한 /dev/kvm을 필요로 하므로 Windows에 실행 파일만 설치해서는 동작하지 않습니다. Firecracker 공식 시작 안내
+
+Ubuntu 터미널에서 실행하세요.
+
+uname -m
+uname -r
+ls -l /dev/kvm
+test -r /dev/kvm && test -w /dev/kvm && echo "KVM READY" || echo "KVM NOT READY"
+
+결과에 따라 다음처럼 진행합니다.
+
+| 결과 | 다음 단계 |
+|---|---|
+| KVM READY | Firecracker 설치·게스트 부팅 확인으로 진행 |
+| /dev/kvm은 있지만 접근 불가 | KVM 그룹·장치 권한 확인 |
+| /dev/kvm 자체가 없음 | 중첩 가상화와 커널 지원 확인, 필요하면 별도 Linux 환경 사용 |
+
+WSL2에는 nestedVirtualization 설정이 있지만, 설정 하나만으로 모든 PC에서 Firecracker 실행이 보장되는 것은 아닙니다. /dev/kvm과 실제 게스트 부팅으로 확인해야 합니다. Microsoft WSL 설정 문서
+
+KVM이 안 되면 논문 본 실험에는 별도 Ubuntu PC 또는 KVM 중첩 가상화를 지원하는 Linux VM을 권합니다. Docker 실험은 먼저 진행할 수 있습니다.
+
+4. Firecracker 준비
+
+KVM 확인 후 Firecracker 공식 Releases에서 Linux 아키텍처에 맞는 안정 버전과 함께 제공되는 jailer를 받습니다. 논문 재현성을 위해 선택한 버전과 파일 체크섬을 기록합니다.
+
+준비할 구성품은 다음과 같습니다.
+
+- firecracker: microVM 실행기
+- jailer: 실행기의 권한·환경 격리
+- 해당 버전에 맞는 Linux 게스트 커널
+- 실험용 root filesystem 이미지
+
+공식 시작 안내는 기본 부팅 예제이며 jailer를 생략합니다. 우리 공격 실험에는 별도의 격리 설정과 외부 통신 차단 검증을 추가한 뒤 사용하겠습니다. 처음에는 공격 코드 없이 게스트 부팅·종료만 확인합니다.
+
+5. 설치 후 실험 구성
+
+Docker와 microVM은 두 개의 실행 조건으로 비교하겠습니다.
+
+- Docker 조건: 내부 네트워크의 취약 사이트와 제한된 HTTP 실행기
+- microVM 조건: 별도 게스트 커널 안에서 같은 실험 수행
+- 공통 조건: 동일한 입력·판정 기준·자원 예산과 감사 로그
+
+Qwen 추론은 실행 샌드박스 밖에 두고, 검증된 요청·응답만 전달하도록 구성할 예정입니다. Docker나 microVM 설치가 현재 Ollama 자원 경합을 자동으로 해결하지는 않으므로, 모델 실험 시간도 별도로 확보해야 합니다.
+
+우선 1~3단계를 완료한 뒤 docker version, docker compose version, wsl --list --verbose, /dev/kvm 확인 결과를 보내 주세요. 그 결과에 맞춰 Firecracker 부팅과 실제 실험 패키지 구성을 이어가겠습니다.
+
+먼저 Windows를 재부팅하면 됩니다. 로그상 WSL 설치는 완료됐지만, Ubuntu는 아직 설치되지 않았습니다. 그래서 WSL_E_DISTRO_NOT_FOUND가 발생한 것입니다.
+
+1. 진행 중인 작업을 저장하고 Windows를 다시 시작하세요. 실행 중인 논문 실험이 있다면 종료될 수 있으니 완료 여부를 먼저 확인하세요. WSL 구성 요소를 적용하려면 재부팅이 필요합니다. Microsoft 설치 안내
+2. 재부팅 후 관리자 PowerShell에서 실행하세요.
+
+   wsl --install -d Ubuntu-24.04
+3. Ubuntu 설치 후 Linux 사용자 이름과 비밀번호를 만드세요. 비밀번호를 입력할 때 화면에 글자가 표시되지 않는 것은 정상입니다. Ubuntu 창이 자동으로 열리지 않으면 다음을 실행하세요.
+
+   wsl -d Ubuntu-24.04
+4. Ubuntu에서 exit를 입력해 PowerShell로 돌아온 뒤 확인하세요.
+
+   wsl --list --verbose
+
+   아래처럼 VERSION이 2이면 준비된 것입니다. Stopped 또는 Running은 둘 다 괜찮습니다.
+
+     NAME             STATE           VERSION
+* Ubuntu-24.04     Stopped         2
+
+새로 설치한 배포판은 기본적으로 WSL 2를 사용하므로, 지금은 wsl --set-version을 다시 실행할 필요가 없습니다. 공식 설명
+
+설치가 완료되면 wsl --list --verbose 결과를 보내주세요. 이어서 Docker 설치와 microVM 실행에 필요한 KVM 지원 여부를 확인하겠습니다.
+
+---------------
+
+Ubuntu에 들어가는 방법은 두 가지입니다.
+
+- Windows 시작 메뉴에서 Ubuntu 24.04를 검색해 실행
+- PowerShell에서 아래 명령 실행
+
+wsl -d Ubuntu-24.04
+
+그러면 Linux 명령을 입력하는 터미널로 들어갑니다. 처음에는 Linux 사용자 이름과 비밀번호를 설정합니다. Microsoft 안내
+
+예를 들어 화면이 이렇게 바뀝니다.
+
+사용자이름@컴퓨터이름:~$
+
+여기서 exit를 입력하면 PowerShell로 돌아옵니다.
+
+Linux 파일을 보고 싶다면 Windows 파일 탐색기 주소창에 다음을 입력하세요.
+
+\\wsl.localhost\Ubuntu-24.04
+
+개인 파일은 그 안의 home → 설정한 사용자 이름 폴더에 있습니다. 파일 접근 안내

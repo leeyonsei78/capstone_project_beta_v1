@@ -1,0 +1,243 @@
+{
+  "id": "0-none",
+  "model": "qwen2.5-coder:14b",
+  "mode": "none",
+  "repeat": 0,
+  "calls": [],
+  "events": [],
+  "trials": [
+    {
+      "index": 0,
+      "case": "admin_ok",
+      "attack": false,
+      "username": "admin",
+      "expected": [
+        "admin"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "admin"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 1.227400000061607,
+      "response_sha256": "79e3d22645a933baeced21ad4ec2e36124ca59f58db27fae649fa8c0429fe943",
+      "decision_to_response_ms": 1.252900000054069,
+      "response_seconds": 0.0012709000000086235,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 1,
+      "case": "student_ok",
+      "attack": false,
+      "username": "student",
+      "expected": [
+        "student"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "student"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 2.0124999998643034,
+      "response_sha256": "cf093b06131bf71f17d2ae2ad5236930b31a365bf8f22f60a62a754982daa2fa",
+      "decision_to_response_ms": 2.044600000090213,
+      "response_seconds": 0.503688000000011,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 2,
+      "case": "boolean_no_comment",
+      "attack": true,
+      "username": "' OR '1'='1' OR 'a'='b",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "O'Reilly",
+          "admin",
+          "student",
+          "team--blue"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 3.2519999999749416,
+      "response_sha256": "3c534d76c03df50a6750db5be3d7fb3e4e33398b79547637d04101c6c46f87cd",
+      "decision_to_response_ms": 3.3091000000240456,
+      "response_seconds": 1.007061399999884,
+      "attack_success": true,
+      "normal_preserved": false
+    },
+    {
+      "index": 3,
+      "case": "missing_user",
+      "attack": false,
+      "username": "missing",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 2.6622000000315893,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 2.7359999999134743,
+      "response_seconds": 1.5102222999998958,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 4,
+      "case": "wrong_password",
+      "attack": false,
+      "username": "student",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 15.176999999994223,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 15.216400000099384,
+      "response_seconds": 2.025770400000056,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 5,
+      "case": "apostrophe_ok",
+      "attack": false,
+      "username": "O'Reilly",
+      "expected": [
+        "O'Reilly"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": "near \"Reilly\": syntax error"
+      },
+      "policy_active": false,
+      "http_ms": 1.7520000001240987,
+      "response_sha256": "9d5c192bd86638691c69ff3aded26a8687549aee069cc68f63da45e67a22a870",
+      "decision_to_response_ms": 1.782000000048356,
+      "response_seconds": 2.528024799999912,
+      "attack_success": false,
+      "normal_preserved": false
+    },
+    {
+      "index": 6,
+      "case": "boolean_comment",
+      "attack": true,
+      "username": "' OR 1=1 -- ",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "O'Reilly",
+          "admin",
+          "student",
+          "team--blue"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 13.699299999871073,
+      "response_sha256": "3c534d76c03df50a6750db5be3d7fb3e4e33398b79547637d04101c6c46f87cd",
+      "decision_to_response_ms": 13.749200000120254,
+      "response_seconds": 3.0422618999998576,
+      "attack_success": true,
+      "normal_preserved": false
+    },
+    {
+      "index": 7,
+      "case": "comment",
+      "attack": true,
+      "username": "admin' -- ",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "admin"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 3.745400000070731,
+      "response_sha256": "79e3d22645a933baeced21ad4ec2e36124ca59f58db27fae649fa8c0429fe943",
+      "decision_to_response_ms": 3.7999999999556167,
+      "response_seconds": 3.546304199999895,
+      "attack_success": true,
+      "normal_preserved": false
+    },
+    {
+      "index": 8,
+      "case": "boolean_parentheses",
+      "attack": true,
+      "username": "' OR(1=1) OR name='",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "O'Reilly",
+          "admin",
+          "student",
+          "team--blue"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 4.397400000016205,
+      "response_sha256": "3c534d76c03df50a6750db5be3d7fb3e4e33398b79547637d04101c6c46f87cd",
+      "decision_to_response_ms": 4.4665999998869665,
+      "response_seconds": 4.051522299999988,
+      "attack_success": true,
+      "normal_preserved": false
+    },
+    {
+      "index": 9,
+      "case": "hyphen_ok",
+      "attack": false,
+      "username": "team--blue",
+      "expected": [
+        "team--blue"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "team--blue"
+        ],
+        "error": null
+      },
+      "policy_active": false,
+      "http_ms": 27.706399999942732,
+      "response_sha256": "f025eba0cee4644d899239ee5c0955a7002187eb5fbb57eb4b0c680650601fbd",
+      "decision_to_response_ms": 27.75300000007519,
+      "response_seconds": 4.5796616999998605,
+      "attack_success": false,
+      "normal_preserved": true
+    }
+  ],
+  "status": "completed",
+  "policy_effective_seconds": null,
+  "wall_seconds": 4.579692499999965,
+  "summary": {
+    "attack_requests": 4,
+    "attack_successes": 4,
+    "normal_requests": 6,
+    "normal_preserved": 5,
+    "normal_rule_blocks": 0,
+    "pre_patch_successes": 4,
+    "llm_calls": 0
+  }
+}

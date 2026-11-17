@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "comment_then_html-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "admin' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.4025000000401633
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<script>void(0)</script>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;script&gt;void(0)&lt;/script&gt;"
+        },
+        "response_sha256": "eb22fb16fe709e781ad1f8eed74120e8ac724cc29d102014cf61658df9fb7238",
+        "http_ms": 0.7650999996258179
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.8661000001666253
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.0242000003017893
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7726999997430539
+      }
+    ]
+  },
+  {
+    "id": "comment_then_html-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "admin",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.6975999997157487
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.1075000002165325
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.8058999997047067
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 24.919800000134273
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 2.683500000330241
+      }
+    ]
+  },
+  {
+    "id": "boolean_then_document-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' OR 1=1 -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 14.266799999859359
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 1.1477000002741988
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 13.394099999914033
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 15.784700000040175
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.5622999999322928
+      }
+    ]
+  },
+  {
+    "id": "boolean_then_document-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 13.04389999995692
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.9597999996913131
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.8923999998842191
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.018499999645428
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.868200000240904
+      }
+    ]
+  },
+  {
+    "id": "document_then_sql-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 10.436900000058813
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "admin' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.0504000001674285
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.8920000000216532
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.8821999999781838
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.6392999998752202
+      }
+    ]
+  },
+  {
+    "id": "document_then_sql-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 0.935600000047998
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 0.7222999997793522
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.6855999999970663
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.9565999998812913
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.8175000002665911
+      }
+    ]
+  },
+  {
+    "id": "parentheses_then_handler-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' OR(1=1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 26.40270000028977
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<img src=x onerror=\"void(0)\">"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;img src=x onerror=&quot;void(0)&quot;&gt;"
+        },
+        "response_sha256": "b16b8a7324f339bf6b9cb26a3ddd06343b9456cc16ed8a963c74dcae23a82a70",
+        "http_ms": 15.549099999589089
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.6676999998708197
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 13.519199999791454
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 15.328500000123313
+      }
+    ]
+  },
+  {
+    "id": "parentheses_then_handler-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' OR(1=1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 4.0468000001965265
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' OR(1=1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 24.958800000149495
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.4740000001438602
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.1960000001636217
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 12.294099999962782
+      }
+    ]
+  },
+  {
+    "id": "comment_then_frame-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "admin' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 2.0119000000704546
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<iframe srcdoc=\"&lt;script&gt;void(0)&lt;/script&gt;\"></iframe>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;iframe srcdoc=&quot;&amp;lt;script&amp;gt;void(0)&amp;lt;/script&amp;gt;&quot;&gt;&lt;/iframe&gt;"
+        },
+        "response_sha256": "a0480cc04cc63bc062e8caae02531366dab5c340f51442d45702afb59ab4ba26",
+        "http_ms": 0.8184999996956321
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.718100000085542
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.8910999999898195
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7633999998688523
+      }
+    ]
+  },
+  {
+    "id": "comment_then_frame-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "SQL tutorial: SELECT name FROM users"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "SQL tutorial: SELECT name FROM users"
+        },
+        "response_sha256": "495683553138306faaca1b1b7c426c1e3dd3823f89f6ae5e7122ff44eb09d384",
+        "http_ms": 1.1264999998275016
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "HTML tutorial: iframe srcdoc"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "HTML tutorial: iframe srcdoc"
+        },
+        "response_sha256": "88efcf940a12b81b59706a4d5ad6c5c2d90442ec1cba50382955c02d23d56018",
+        "http_ms": 25.34360000026936
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 4.968000000189932
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.210499999615422
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.1988999999630323
+      }
+    ]
+  },
+  {
+    "id": "order_counterfactual-v0-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 26.455799999894225
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<script>void(0)</script>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;script&gt;void(0)&lt;/script&gt;"
+        },
+        "response_sha256": "eb22fb16fe709e781ad1f8eed74120e8ac724cc29d102014cf61658df9fb7238",
+        "http_ms": 0.8767999997871812
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.7851000000300701
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.9027999999489111
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7407999996758008
+      }
+    ]
+  },
+  {
+    "id": "order_counterfactual-v0-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<script>void(0)</script>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;script&gt;void(0)&lt;/script&gt;"
+        },
+        "response_sha256": "eb22fb16fe709e781ad1f8eed74120e8ac724cc29d102014cf61658df9fb7238",
+        "http_ms": 0.9921000000758795
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 13.271499999973457
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.1104999998678977
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.0366999999860127
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.8066999998845858
+      }
+    ]
+  },
+  {
+    "id": "comment_then_html-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.1917000001631095
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<svg onload=\"void(0)\"></svg>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;svg onload=&quot;void(0)&quot;&gt;&lt;/svg&gt;"
+        },
+        "response_sha256": "54417010622bf037e1c1a6af32df30189bd614b3ccf13877973f706e1e3f1399",
+        "http_ms": 1.5469999998458661
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.0778000000755128
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.2375999999676424
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.108399999793619
+      }
+    ]
+  },
+  {
+    "id": "comment_then_html-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.184199999897828
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.247800000328425
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.0237000001325214
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.9975000002668821
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7974000000103842
+      }
+    ]
+  },
+  {
+    "id": "boolean_then_document-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' OR '1'='1' OR 'a'='b",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.38699999979508
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 0.8260999998128682
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 11.899899999662011
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.0723000000325555
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7473000000572938
+      }
+    ]
+  },
+  {
+    "id": "boolean_then_document-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.5183999998953368
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7860000000619038
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.2603000000126485
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.1549000000741216
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7900000000518048
+      }
+    ]
+  },
+  {
+    "id": "document_then_sql-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 1.7700000003060268
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 3.0621000000792264
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 2.4372999996558065
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 2.1716000001106295
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.508400000147958
+      }
+    ]
+  },
+  {
+    "id": "document_then_sql-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 0.9655000003476744
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 1.02100000003702
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.1566999996830418
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.069299999926443
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.0205999997197068
+      }
+    ]
+  },
+  {
+    "id": "parentheses_then_handler-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' oR(2>1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.4154000000417
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<img src=x onerror=\"void(0)\">"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;img src=x onerror=&quot;void(0)&quot;&gt;"
+        },
+        "response_sha256": "b16b8a7324f339bf6b9cb26a3ddd06343b9456cc16ed8a963c74dcae23a82a70",
+        "http_ms": 1.4458999999078515
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.538800000162155
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 2.6130000001103326
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 1.0090000000673172
+      }
+    ]
+  },
+  {
+    "id": "parentheses_then_handler-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' oR(2>1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.1230000000068685
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "' oR(2>1) OR name='",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 0.9586999999555701
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.8257999998022569
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.6683999997439969
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7833000004211499
+      }
+    ]
+  },
+  {
+    "id": "comment_then_frame-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student' -- ",
+          "password": "wrong"
+        },
+        "status": 401,
+        "response": {
+          "authenticated_users": []
+        },
+        "response_sha256": "e991c05d2039d192bfe174ceb533fa5c4579a2ddbac35af91b538ba2c5b99171",
+        "http_ms": 1.082600000245293
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<iframe srcdoc=\"&lt;script&gt;void(0)&lt;/script&gt;\"></iframe>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;iframe srcdoc=&quot;&amp;lt;script&amp;gt;void(0)&amp;lt;/script&amp;gt;&quot;&gt;&lt;/iframe&gt;"
+        },
+        "response_sha256": "a0480cc04cc63bc062e8caae02531366dab5c340f51442d45702afb59ab4ba26",
+        "http_ms": 0.8739999998397252
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.7732999997642764
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.881199999639648
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.6817999997110746
+      }
+    ]
+  },
+  {
+    "id": "comment_then_frame-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "SQL tutorial: SELECT name FROM users"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "SQL tutorial: SELECT name FROM users"
+        },
+        "response_sha256": "495683553138306faaca1b1b7c426c1e3dd3823f89f6ae5e7122ff44eb09d384",
+        "http_ms": 1.1082999999416643
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "HTML tutorial: iframe srcdoc"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "HTML tutorial: iframe srcdoc"
+        },
+        "response_sha256": "88efcf940a12b81b59706a4d5ad6c5c2d90442ec1cba50382955c02d23d56018",
+        "http_ms": 0.7560999997622275
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 1.2480000000323344
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.3289999997141422
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.8698999999978696
+      }
+    ]
+  },
+  {
+    "id": "order_counterfactual-v1-p",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 1.5017999999145104
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<svg onload=\"void(0)\"></svg>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;svg onload=&quot;void(0)&quot;&gt;&lt;/svg&gt;"
+        },
+        "response_sha256": "54417010622bf037e1c1a6af32df30189bd614b3ccf13877973f706e1e3f1399",
+        "http_ms": 1.2980000001334702
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.9132000000136031
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 0.9210000002894958
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.7690000002185116
+      }
+    ]
+  },
+  {
+    "id": "order_counterfactual-v1-n",
+    "observations": [
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "<svg onload=\"void(0)\"></svg>"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "&lt;svg onload=&quot;void(0)&quot;&gt;&lt;/svg&gt;"
+        },
+        "response_sha256": "54417010622bf037e1c1a6af32df30189bd614b3ccf13877973f706e1e3f1399",
+        "http_ms": 0.9337999999843305
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1002"
+        },
+        "status": 403,
+        "response": {
+          "document": null
+        },
+        "response_sha256": "ab131783efb2f25778edb562e3651a07dc5a2ade969cbc837b4388b1a806e055",
+        "http_ms": 0.8543999997527862
+      },
+      {
+        "method": "POST",
+        "path": "/search",
+        "input": {
+          "q": "course overview"
+        },
+        "status": 200,
+        "response": {
+          "rendered": "course overview"
+        },
+        "response_sha256": "3c1bc40c8d58c9f9f105404f8514264dab5a5c39abdfab6f8e0a7061be622df4",
+        "http_ms": 0.9569999997438572
+      }
+    ],
+    "controls": [
+      {
+        "method": "POST",
+        "path": "/login",
+        "input": {
+          "username": "student",
+          "password": "practice123"
+        },
+        "status": 200,
+        "response": {
+          "authenticated_users": [
+            "student"
+          ]
+        },
+        "response_sha256": "d2a91e0803d386b122e499faa02ad1ebbe8e68287d41d14f094cdd7c0460998d",
+        "http_ms": 1.1763000002247281
+      },
+      {
+        "method": "POST",
+        "path": "/document",
+        "input": {
+          "id": "1001"
+        },
+        "status": 200,
+        "response": {
+          "document": "student notes"
+        },
+        "response_sha256": "8d04f8af3e3504d19aad2e00d2c0012c0a04a8b7f3c75e7b15d96aa63d3579da",
+        "http_ms": 0.8523000001332548
+      }
+    ]
+  }
+]

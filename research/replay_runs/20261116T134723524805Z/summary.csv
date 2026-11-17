@@ -1,0 +1,16 @@
+﻿id,mode,repeat,status,policy_effective_seconds,wall_seconds,attack_requests,attack_successes,normal_requests,normal_preserved,normal_rule_blocks,pre_patch_successes,llm_calls
+0-ai_sync,ai_sync,0,completed,11.910162599999921,16.471171599999934,4,0,6,6,0,0,1
+0-none,none,0,completed,,4.579692499999965,4,4,6,5,0,4,0
+0-always_safe,always_safe,0,completed,0.0,4.528045599999814,4,0,6,6,0,0,0
+0-rules,rules,0,completed,,4.572762899999816,4,1,6,4,1,1,0
+0-ai_async,ai_async,0,completed,1.7034105000000181,4.623305999999957,4,1,6,6,0,1,1
+1-rules,rules,1,completed,,4.555792500000052,4,1,6,4,1,1,0
+1-none,none,1,completed,,4.5671330999998645,4,4,6,5,0,4,0
+1-ai_sync,ai_sync,1,completed,2.030070300000034,6.6033158000000185,4,0,6,6,0,0,1
+1-always_safe,always_safe,1,completed,0.0,4.551044899999852,4,0,6,6,0,0,0
+1-ai_async,ai_async,1,completed,1.737277499999891,4.526927899999919,4,1,6,5,0,1,1
+2-ai_async,ai_async,2,completed,2.069778400000132,4.5522273000001405,4,1,6,5,0,1,1
+2-always_safe,always_safe,2,completed,0.0,4.5931015999999545,4,0,6,6,0,0,0
+2-ai_sync,ai_sync,2,completed,1.6506340999999338,6.23359389999996,4,0,6,6,0,0,1
+2-none,none,2,completed,,4.560159899999917,4,4,6,5,0,4,0
+2-rules,rules,2,completed,,4.581774500000165,4,1,6,4,1,1,0

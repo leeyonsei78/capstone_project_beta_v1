@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-17T12:18:44.856182+00:00",
+  "args": {
+    "repeats": 6,
+    "configs": [
+      "fixed",
+      "react-flat",
+      "react-graph"
+    ],
+    "max_steps": 12,
+    "llm_cap": 6
+  },
+  "model": "qwen2.5-coder:14b",
+  "scope": "agent architecture (fixed vs ReAct) x knowledge (flat vs networkx dual-graph) on a synthetic two-asset pivot; loopback; local model; Docker-free",
+  "bases_note": "ephemeral loopback ports",
+  "source_sha256": {}
+}

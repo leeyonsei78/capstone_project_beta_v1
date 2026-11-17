@@ -1,0 +1,7 @@
+﻿mode,n,completed,failed_or_missing,tp,fn,fp,tn,benign_fp,benign_n,static_fp,static_n,correct,pair_both_correct,pairs,positives,negatives
+rules_current,24,24,0,0,12,0,12,0,6,0,6,12,0,12,12,12
+rules_history,24,24,0,8,4,0,12,0,6,0,6,20,8,12,12,12
+rules_extended,24,24,0,12,0,0,12,0,6,0,6,24,12,12,12,12
+llm_current,24,24,0,0,12,0,12,0,6,0,6,12,0,12,12,12
+llm_history,24,24,0,2,10,0,12,0,6,0,6,14,2,12,12,12
+hybrid_exploratory,24,24,0,12,0,0,12,0,6,0,6,24,12,12,12,12

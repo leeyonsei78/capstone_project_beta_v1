@@ -1,0 +1,120 @@
+{
+  "scope": "Saved artifacts only; exploratory reanalysis; no new experiment or model inference",
+  "inference_limits": "Purposive synthetic cases; event dependence; case grouping does not establish population sampling; no confirmatory significance claim",
+  "holdout_comparisons": {
+    "rules": {
+      "events_diagnostic_only": {
+        "n": 33,
+        "llm_correct": 31,
+        "comparator_correct": 30,
+        "llm_only_correct": 2,
+        "comparator_only_correct": 1,
+        "exact_mcnemar_two_sided_p": 1.0
+      },
+      "cases_all_events_correct": {
+        "n": 23,
+        "llm_correct": 21,
+        "comparator_correct": 20,
+        "llm_only_correct": 2,
+        "comparator_only_correct": 1,
+        "exact_mcnemar_two_sided_p": 1.0
+      }
+    },
+    "rules2": {
+      "events_diagnostic_only": {
+        "n": 33,
+        "llm_correct": 31,
+        "comparator_correct": 27,
+        "llm_only_correct": 5,
+        "comparator_only_correct": 1,
+        "exact_mcnemar_two_sided_p": 0.21875
+      },
+      "cases_all_events_correct": {
+        "n": 23,
+        "llm_correct": 21,
+        "comparator_correct": 18,
+        "llm_only_correct": 4,
+        "comparator_only_correct": 1,
+        "exact_mcnemar_two_sided_p": 0.375
+      }
+    }
+  },
+  "architecture_normalized_trace_counts": {
+    "fixed": {
+      "sessions": 6,
+      "distinct_traces": 1,
+      "hashes": [
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788",
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788",
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788",
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788",
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788",
+        "b305e7e9dd275a821794d84bc19f31d6ac3681087811f673d6f71a4d66306788"
+      ]
+    },
+    "react-flat": {
+      "sessions": 6,
+      "distinct_traces": 1,
+      "hashes": [
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1",
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1",
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1",
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1",
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1",
+        "a08855aaf89b03ad57928345be6ceab2140a63276699446799936da3bed3d4b1"
+      ]
+    },
+    "react-graph": {
+      "sessions": 6,
+      "distinct_traces": 1,
+      "hashes": [
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd",
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd",
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd",
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd",
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd",
+        "85764f45af7df408e9b586a07f271f7d945aff653ecd737e034fbb62d5d800cd"
+      ]
+    }
+  },
+  "any_alarm_vs_allow_metric_conflicts": [
+    {
+      "detector": "rules2_stateless",
+      "case_id": "impossible_travel_takeover",
+      "allowed_credential_valid_positions": [
+        0
+      ],
+      "actions": [
+        "allow",
+        "lock"
+      ]
+    },
+    {
+      "detector": "rules3_stateless",
+      "case_id": "impossible_travel_takeover",
+      "allowed_credential_valid_positions": [
+        0
+      ],
+      "actions": [
+        "allow",
+        "lock"
+      ]
+    },
+    {
+      "detector": "rules_stateful",
+      "case_id": "impossible_travel_takeover",
+      "allowed_credential_valid_positions": [
+        0
+      ],
+      "actions": [
+        "allow",
+        "lock"
+      ]
+    }
+  ],
+  "sources": {
+    "research/ato_holdout_runs/20261117T105512/detail.json": "79ae0f58693ab05064476577a9313badd51821b1a76615dccf801d815f5f30d8",
+    "research/agent_arch_runs/20261117T120319/requests.jsonl": "c21278e555cab4925ef21019949abdf4ae4d6dcb0d1c073ccfa4523d9b76d0dc",
+    "research/ato_stateful_runs/20261117T112247/case_detail.json": "9db72b57cf5a43f59bf13cbc4782f577e02a2e62c539b387b01cfd9c73b19afe"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-11-17T10:58:21.967864+00:00",
+  "args": {
+    "defender_model": "qwen2.5-coder:14b",
+    "modes": [
+      "rules",
+      "rules2",
+      "llm"
+    ],
+    "holdout": "C:\\codex_qwen_pentest\\ato_holdout_cases.json"
+  },
+  "scope": "rules-blind holdout re-validation; per-event stateless scoring; synthetic; dev=ato_fixtures.CASES vs independent holdout",
+  "holdout_authored_by": "blind general-purpose subagent, rules-unseen",
+  "holdout_cases": 23,
+  "dev_cases": 30,
+  "defender_options": {
+    "num_ctx": 2048,
+    "num_predict": 80,
+    "temperature": 0,
+    "seed": 20261116
+  },
+  "limitation": "holdout author is an AI subagent, rules-blind + separate context, not a human third party",
+  "holdout_sha256": "6b50b007ceb4817b67f6f1db429f689fc909399b9979fe4412bc1265843cb328",
+  "source_sha256": {
+    "experiments/run_ato_holdout.py": "b490a9dfcb945ca2c6674e2689e84c653198fef207d4ea713a1639ad625669f0",
+    "ato_holdout.py": "297cdb31caa4dcb6c9f4becebc0c8c5450b5635317fd561d2edd4fba668765db",
+    "ato_fixtures.py": "2c80634dbc406d50902ae68b11aa87c9395de284cb1caf107741b6a7e7f501bc",
+    "ato_study.py": "9f60a5c2a8bcba8ebc307397cb5a5bb46fdc778b17d70ec09445d7db77aa1ee3",
+    "ai_study.py": "3c782f953cb0d67326f2ec7a669bdb16cb8e18393b25b4c1321353ef3f8ea6e2"
+  }
+}

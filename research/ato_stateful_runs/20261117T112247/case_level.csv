@@ -1,0 +1,7 @@
+﻿detector,split,benign_cases,benign_clean,attack_cases,attack_caught
+rules2_stateless,dev,20,15,10,10
+rules2_stateless,holdout,12,8,11,11
+rules3_stateless,dev,20,19,10,10
+rules3_stateless,holdout,12,12,11,11
+rules_stateful,dev,20,19,10,10
+rules_stateful,holdout,12,12,11,11

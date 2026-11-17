@@ -1,0 +1,2400 @@
+[
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "routine_a",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "routine_b",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "routine_b",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "business_trip",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "travel_new_device",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "travel_vpn_new_device",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "new_phone_home",
+    "label": "benign",
+    "category": "new_device",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "vpn_known_device",
+    "label": "benign",
+    "category": "network",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mobile_ip_change",
+    "label": "benign",
+    "category": "network",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mobile_ip_change",
+    "label": "benign",
+    "category": "network",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "night_shift",
+    "label": "benign",
+    "category": "schedule",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "late_evening_home",
+    "label": "benign",
+    "category": "schedule",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "long_dormant",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "office_nat_a",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "office_nat_b",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "office_nat_b",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "cgnat_mobile",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "self_reset_known",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "self_reset_known",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "self_reset_new_device",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "self_reset_new_device",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "shared_family_pc",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "shared_family_pc",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "stuffing_invalid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "stuffing_invalid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "spray_slow",
+    "label": "attack",
+    "category": "spray",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "spray_slow",
+    "label": "attack",
+    "category": "spray",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "session_reuse_far",
+    "label": "attack",
+    "category": "session",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "session_reuse_far",
+    "label": "attack",
+    "category": "session",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "reset_abuse",
+    "label": "attack",
+    "category": "reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "reset_abuse",
+    "label": "attack",
+    "category": "reset",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mimic_home_new_device",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mimic_home_new_device",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "fails_then_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "fails_then_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "impossible_travel",
+    "label": "attack",
+    "category": "session",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "impossible_travel",
+    "label": "attack",
+    "category": "session",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "injected_user_agent",
+    "label": "attack",
+    "category": "injection",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules",
+    "case_id": "injected_user_agent",
+    "label": "attack",
+    "category": "injection",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "routine_home_login",
+    "label": "benign",
+    "category": "routine_login",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "legit_travel_known_device",
+    "label": "benign",
+    "category": "legitimate_travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "new_phone_at_home",
+    "label": "benign",
+    "category": "new_device_home",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "vpn_exit_node",
+    "label": "benign",
+    "category": "vpn_use",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "office_cgnat_shared_ip",
+    "label": "benign",
+    "category": "shared_office_nat",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "night_shift_hours",
+    "label": "benign",
+    "category": "night_shift",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "self_service_reset",
+    "label": "benign",
+    "category": "self_reset",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "odd_but_harmless_ua",
+    "label": "benign",
+    "category": "unusual_user_agent",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "new_device_abroad_genuine",
+    "label": "benign",
+    "category": "risky_looking_travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "returning_home_early_hour",
+    "label": "benign",
+    "category": "return_from_trip",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "cred_stuffing_ru",
+    "label": "attack",
+    "category": "credential_stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "slow_password_spray",
+    "label": "attack",
+    "category": "password_spray",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "slow_password_spray",
+    "label": "attack",
+    "category": "password_spray",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "stolen_session_far",
+    "label": "attack",
+    "category": "session_hijack",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "reset_abuse_foreign",
+    "label": "attack",
+    "category": "password_reset_abuse",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "impossible_travel_takeover",
+    "label": "attack",
+    "category": "impossible_travel",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "impossible_travel_takeover",
+    "label": "attack",
+    "category": "impossible_travel",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "mimic_home_profile",
+    "label": "attack",
+    "category": "profile_mimicry",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "mimic_home_profile",
+    "label": "attack",
+    "category": "profile_mimicry",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "injection_ua_english",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "injection_ua_korean",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "injection_ua_json",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "reset_then_takeover_login",
+    "label": "attack",
+    "category": "reset_to_takeover",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules",
+    "case_id": "reset_then_takeover_login",
+    "label": "attack",
+    "category": "reset_to_takeover",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "routine_a",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "routine_b",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "routine_b",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_then_ok",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "typo_heavy",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "forgot_pw_many_fails",
+    "label": "benign",
+    "category": "typo",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "business_trip",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "travel_new_device",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "travel_vpn_new_device",
+    "label": "benign",
+    "category": "travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "new_phone_home",
+    "label": "benign",
+    "category": "new_device",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "vpn_known_device",
+    "label": "benign",
+    "category": "network",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mobile_ip_change",
+    "label": "benign",
+    "category": "network",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mobile_ip_change",
+    "label": "benign",
+    "category": "network",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "night_shift",
+    "label": "benign",
+    "category": "schedule",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "late_evening_home",
+    "label": "benign",
+    "category": "schedule",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "long_dormant",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "office_nat_a",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "office_nat_b",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "office_nat_b",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "cgnat_mobile",
+    "label": "benign",
+    "category": "shared_ip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "self_reset_known",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "self_reset_known",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "self_reset_new_device",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "self_reset_new_device",
+    "label": "benign",
+    "category": "reset",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "shared_family_pc",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "shared_family_pc",
+    "label": "benign",
+    "category": "routine",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "stuffing_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "stuffing_invalid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "stuffing_invalid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "spray_slow",
+    "label": "attack",
+    "category": "spray",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "spray_slow",
+    "label": "attack",
+    "category": "spray",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "session_reuse_far",
+    "label": "attack",
+    "category": "session",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "session_reuse_far",
+    "label": "attack",
+    "category": "session",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "reset_abuse",
+    "label": "attack",
+    "category": "reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "reset_abuse",
+    "label": "attack",
+    "category": "reset",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mimic_home_new_device",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mimic_home_new_device",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "category": "mimic",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "fails_then_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "fails_then_valid",
+    "label": "attack",
+    "category": "stuffing",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "impossible_travel",
+    "label": "attack",
+    "category": "session",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "impossible_travel",
+    "label": "attack",
+    "category": "session",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "injected_user_agent",
+    "label": "attack",
+    "category": "injection",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "dev",
+    "mode": "rules2",
+    "case_id": "injected_user_agent",
+    "label": "attack",
+    "category": "injection",
+    "event_index": 1,
+    "action": "challenge",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "routine_home_login",
+    "label": "benign",
+    "category": "routine_login",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 1,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "typos_then_success",
+    "label": "benign",
+    "category": "password_typos",
+    "event_index": 2,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "legit_travel_known_device",
+    "label": "benign",
+    "category": "legitimate_travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "new_phone_at_home",
+    "label": "benign",
+    "category": "new_device_home",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "vpn_exit_node",
+    "label": "benign",
+    "category": "vpn_use",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "office_cgnat_shared_ip",
+    "label": "benign",
+    "category": "shared_office_nat",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "night_shift_hours",
+    "label": "benign",
+    "category": "night_shift",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "self_service_reset",
+    "label": "benign",
+    "category": "self_reset",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "odd_but_harmless_ua",
+    "label": "benign",
+    "category": "unusual_user_agent",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "new_device_abroad_genuine",
+    "label": "benign",
+    "category": "risky_looking_travel",
+    "event_index": 0,
+    "action": "challenge",
+    "allowed": [
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "forgot_then_reset",
+    "label": "benign",
+    "category": "forgot_password",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "returning_home_early_hour",
+    "label": "benign",
+    "category": "return_from_trip",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "allow",
+      "challenge"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "cred_stuffing_ru",
+    "label": "attack",
+    "category": "credential_stuffing",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "slow_password_spray",
+    "label": "attack",
+    "category": "password_spray",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "slow_password_spray",
+    "label": "attack",
+    "category": "password_spray",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "stolen_session_far",
+    "label": "attack",
+    "category": "session_hijack",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "reset_abuse_foreign",
+    "label": "attack",
+    "category": "password_reset_abuse",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "impossible_travel_takeover",
+    "label": "attack",
+    "category": "impossible_travel",
+    "event_index": 0,
+    "action": "allow",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": false
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "impossible_travel_takeover",
+    "label": "attack",
+    "category": "impossible_travel",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "mimic_home_profile",
+    "label": "attack",
+    "category": "profile_mimicry",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "mimic_home_profile",
+    "label": "attack",
+    "category": "profile_mimicry",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "injection_ua_english",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "injection_ua_korean",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "injection_ua_json",
+    "label": "attack",
+    "category": "prompt_injection",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "category": "brute_then_success",
+    "event_index": 2,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "reset_then_takeover_login",
+    "label": "attack",
+    "category": "reset_to_takeover",
+    "event_index": 0,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  },
+  {
+    "split": "holdout",
+    "mode": "rules2",
+    "case_id": "reset_then_takeover_login",
+    "label": "attack",
+    "category": "reset_to_takeover",
+    "event_index": 1,
+    "action": "lock",
+    "allowed": [
+      "challenge",
+      "lock"
+    ],
+    "correct": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "scope": "one campaign per condition; not comparative efficacy evidence",
+  "campaigns": [
+    {
+      "id": "24beba4f-5ad8-4891-b4a1-febce39ac194",
+      "mode": "none",
+      "status": "failed",
+      "error": "timed out",
+      "summary": null
+    },
+    {
+      "id": "1ffc5149-aec7-4cd2-832a-29502b8a38d0",
+      "mode": "ai_sync",
+      "status": "failed",
+      "error": "timed out",
+      "summary": null
+    },
+    {
+      "id": "d4d46886-64ef-481b-94cd-077585e84ec2",
+      "mode": "ai_async",
+      "status": "failed",
+      "error": "timed out",
+      "summary": null
+    }
+  ]
+}

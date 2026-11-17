@@ -1,0 +1,1850 @@
+[
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "routine_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "routine_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "typo_then_ok",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "typo_heavy",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "forgot_pw_many_fails",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "business_trip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "travel_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "travel_vpn_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "new_phone_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "vpn_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "mobile_ip_change",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "night_shift",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "late_evening_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "long_dormant",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "office_nat_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": false,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "office_nat_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "cgnat_mobile",
+    "label": "benign",
+    "multi_event": false,
+    "clean": false,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "self_reset_known",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "self_reset_new_device",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "shared_family_pc",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "stuffing_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "stuffing_invalid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "spray_slow",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "session_reuse_far",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "reset_abuse",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "mimic_home_new_device",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "fails_then_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "impossible_travel",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "dev",
+    "id": "injected_user_agent",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "routine_home_login",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "typos_then_success",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "legit_travel_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "new_phone_at_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "vpn_exit_node",
+    "label": "benign",
+    "multi_event": false,
+    "clean": false,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "office_cgnat_shared_ip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": false,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "night_shift_hours",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "self_service_reset",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "odd_but_harmless_ua",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "new_device_abroad_genuine",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "forgot_then_reset",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "allow",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "returning_home_early_hour",
+    "label": "benign",
+    "multi_event": false,
+    "clean": false,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "cred_stuffing_ru",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "slow_password_spray",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "stolen_session_far",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "reset_abuse_foreign",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "impossible_travel_takeover",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "allow",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "mimic_home_profile",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "injection_ua_english",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "injection_ua_korean",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "injection_ua_json",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules2_stateless",
+    "split": "holdout",
+    "id": "reset_then_takeover_login",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "routine_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "routine_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "typo_then_ok",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "typo_heavy",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "forgot_pw_many_fails",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "business_trip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "travel_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "travel_vpn_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "new_phone_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "vpn_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "mobile_ip_change",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "night_shift",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "late_evening_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "long_dormant",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "office_nat_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "office_nat_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "cgnat_mobile",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "self_reset_known",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "self_reset_new_device",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "shared_family_pc",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "stuffing_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "stuffing_invalid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "spray_slow",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "session_reuse_far",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "reset_abuse",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "mimic_home_new_device",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "fails_then_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "impossible_travel",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "dev",
+    "id": "injected_user_agent",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "routine_home_login",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "typos_then_success",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "legit_travel_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "new_phone_at_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "vpn_exit_node",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "office_cgnat_shared_ip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "night_shift_hours",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "self_service_reset",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "odd_but_harmless_ua",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "new_device_abroad_genuine",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "forgot_then_reset",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "returning_home_early_hour",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "cred_stuffing_ru",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "slow_password_spray",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "stolen_session_far",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "reset_abuse_foreign",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "impossible_travel_takeover",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "allow",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "mimic_home_profile",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "injection_ua_english",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "injection_ua_korean",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "injection_ua_json",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules3_stateless",
+    "split": "holdout",
+    "id": "reset_then_takeover_login",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "routine_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "routine_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "typo_then_ok",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "typo_heavy",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "forgot_pw_many_fails",
+    "label": "benign",
+    "multi_event": true,
+    "clean": false,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "business_trip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "travel_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "travel_vpn_new_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "new_phone_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "vpn_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "mobile_ip_change",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "night_shift",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "late_evening_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "long_dormant",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "office_nat_a",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "office_nat_b",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "cgnat_mobile",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "self_reset_known",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "self_reset_new_device",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "shared_family_pc",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "stuffing_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "stuffing_invalid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "spray_slow",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "session_reuse_far",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "reset_abuse",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "mimic_home_new_device",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "mimic_known_device_odd_hour",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "fails_then_valid",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "impossible_travel",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "dev",
+    "id": "injected_user_agent",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "challenge",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "routine_home_login",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "typos_then_success",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "legit_travel_known_device",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "new_phone_at_home",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "vpn_exit_node",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "office_cgnat_shared_ip",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "night_shift_hours",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "self_service_reset",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "odd_but_harmless_ua",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "allow"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "new_device_abroad_genuine",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "forgot_then_reset",
+    "label": "benign",
+    "multi_event": true,
+    "clean": true,
+    "actions": [
+      "allow",
+      "allow",
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "returning_home_early_hour",
+    "label": "benign",
+    "multi_event": false,
+    "clean": true,
+    "actions": [
+      "challenge"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "cred_stuffing_ru",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "slow_password_spray",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "stolen_session_far",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "reset_abuse_foreign",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "impossible_travel_takeover",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "allow",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "mimic_home_profile",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "injection_ua_english",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "injection_ua_korean",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "injection_ua_json",
+    "label": "attack",
+    "multi_event": false,
+    "caught": true,
+    "actions": [
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "cred_stuff_success_after_fails",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock",
+      "lock"
+    ]
+  },
+  {
+    "detector": "rules_stateful",
+    "split": "holdout",
+    "id": "reset_then_takeover_login",
+    "label": "attack",
+    "multi_event": true,
+    "caught": true,
+    "actions": [
+      "lock",
+      "lock"
+    ]
+  }
+]

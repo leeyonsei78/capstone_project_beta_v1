@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-11-17T01:37:53.837523+00:00",
+  "pairs": [
+    [
+      "deepseek-coder-v2:16b",
+      "qwen2.5-coder:14b"
+    ],
+    [
+      "qwen2.5-coder:14b",
+      "deepseek-coder-v2:16b"
+    ]
+  ],
+  "modes": [
+    "none",
+    "rules2",
+    "llm_sync",
+    "llm_escalate"
+  ],
+  "rounds": 8,
+  "repeats": 6,
+  "levels": [
+    "L1_cred",
+    "L2_informed",
+    "L3_device"
+  ],
+  "scope": "cross-model-family capability-ladder follow-up; synthetic; fewer repeats than the same-family run",
+  "source_sha256": {
+    "experiments/run_ato_cross_model.py": "161f8e4f0fea9408caffface97a401029c93a10645033ac442c5b7cb0a7663c6",
+    "experiments/run_ato_adaptive.py": "e0b5f0866714e9495626539034b057d23ca9750b9ab3cfed784c99f6630024a2",
+    "ato_adaptive.py": "46ef2226b947bab00824e66d37c8248aaff755e00ea89bc601cfc0ac20fa5364",
+    "ato_study.py": "9f60a5c2a8bcba8ebc307397cb5a5bb46fdc778b17d70ec09445d7db77aa1ee3",
+    "ato_fixtures.py": "2c80634dbc406d50902ae68b11aa87c9395de284cb1caf107741b6a7e7f501bc",
+    "ai_study.py": "3c782f953cb0d67326f2ec7a669bdb16cb8e18393b25b4c1321353ef3f8ea6e2"
+  }
+}

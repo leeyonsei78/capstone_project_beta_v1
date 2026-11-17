@@ -1,0 +1,482 @@
+[
+  {
+    "kind": "benign",
+    "session": "benign-0",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-1",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-2",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-3",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-4",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-5",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "benign",
+    "session": "benign-6",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "benign",
+    "session": "benign-7",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "benign",
+    "session": "benign-8",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "benign",
+    "session": "benign-9",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "benign",
+    "session": "benign-10",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "benign",
+    "session": "benign-11",
+    "n_requests": 4,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-0",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-1",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 3,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-2",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-3",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-4",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 3,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-5",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-6",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 3,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-7",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 2,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-8",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-9",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 3,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-10",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "noisy",
+    "session": "noisy-11",
+    "n_requests": 20,
+    "rule_detected": true,
+    "rule_latency": 4,
+    "rule_reason": "lure/honeytoken path touched",
+    "lure_touches": 6
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-0",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-1",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-2",
+    "n_requests": 2,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "attack",
+    "llm_detected": true
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-3",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-4",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-5",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-6",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-7",
+    "n_requests": 2,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-8",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-9",
+    "n_requests": 2,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-10",
+    "n_requests": 3,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "stealthy",
+    "session": "stealthy-11",
+    "n_requests": 2,
+    "rule_detected": true,
+    "rule_latency": 1,
+    "rule_reason": "SQL injection signature",
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-0",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-1",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-2",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-3",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-4",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-5",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0,
+    "llm_verdict": "benign",
+    "llm_detected": false
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-6",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-7",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-8",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-9",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-10",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  },
+  {
+    "kind": "credstuff",
+    "session": "credstuff-11",
+    "n_requests": 3,
+    "rule_detected": false,
+    "rule_latency": null,
+    "rule_reason": null,
+    "lure_touches": 0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-11-17T01:37:20.948166+00:00",
+  "source_ladder_run": "20261116T223550",
+  "risk": "rules2",
+  "scope": "analytic lure model; touch probabilities are assumptions, not measurements",
+  "benign_allowed_events": 14,
+  "trap_cost": 5
+}

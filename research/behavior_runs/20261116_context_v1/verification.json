@@ -1,0 +1,14 @@
+{
+  "http_requests": 120,
+  "primary_judgments": 120,
+  "primary_model_calls": 48,
+  "warmup_calls": 1,
+  "exploratory_extraction_calls": 18,
+  "failed_calls": 0,
+  "raw_http_hashes_verified": true,
+  "prompt_inputs_verified": true,
+  "labels_not_in_model_inputs": true,
+  "model_outputs_recomputed": true,
+  "original_paper_unchanged": true,
+  "http_report_matches_file": true
+}

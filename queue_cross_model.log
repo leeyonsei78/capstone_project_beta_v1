@@ -1,0 +1,5 @@
+ladder finished, starting cross-model run
+cross-model run done
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\codex_qwen_pentest\\research\\ato_cross_model_runs\\20261117T013713\\deepseek-coder-v2_16b->qwen2.5-coder_14b-0-none-L1_cred.json'

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "comment_then_html-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "913252b93514226cfca8b1b7aa67f21037b92f298fc261a57aa8eacc6a964e9e",
+      "0e2a3ae88dab872b09f58b14813c276aef39d1f8f2f9397716b7f5a3c17e54df",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_html-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "none",
+      "none",
+      "none"
+    ],
+    "observation_keys": [
+      "beea0e59b4db12903ba25060def18308969f68ce54ede95db9a5c31abf5b2ad3",
+      "db413033a0a29aa7fcdf842be56348a2848d3637be599ed65d7d5514681eb281",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "boolean_then_document-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "14b0d09bbc329827246223c4340f381b11cb4eda49241b7b031d09ac55b91bcc",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "boolean_then_document-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "none",
+      "none",
+      "none"
+    ],
+    "observation_keys": [
+      "d1d369eee129c1cedc4c8403d126af9f865dd4c674eae2caa87c673d68fd3efd",
+      "3abe5375f006f3fd3037e51a5665a66cbe82289703d25b32dc9cd16846ee1f1d",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "document_then_sql-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "sql",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "913252b93514226cfca8b1b7aa67f21037b92f298fc261a57aa8eacc6a964e9e",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "document_then_sql-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "parentheses_then_handler-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "1dc6de0b78acf235b25a5dbe5589eff899e31993363afafcc10b23b7c565dd3e",
+      "c1356a62530f237b27aaf9e087fdb7f816b69620928cc15ba2433b9c950e6635",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "parentheses_then_handler-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "sql",
+      "none"
+    ],
+    "observation_keys": [
+      "1dc6de0b78acf235b25a5dbe5589eff899e31993363afafcc10b23b7c565dd3e",
+      "1dc6de0b78acf235b25a5dbe5589eff899e31993363afafcc10b23b7c565dd3e",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_frame-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "913252b93514226cfca8b1b7aa67f21037b92f298fc261a57aa8eacc6a964e9e",
+      "95c7d842fdfa9326e079f222cd0683ba2b0d7ed97b86b3f2165bc6c41e3ce58f",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_frame-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "bd99574543a6341bdb110b1a5c983ef1c320526b210390474a1e8e13d27ce90d",
+      "6ac08504ee914ce1f923ce47829ac91a1b5e637ad8c0e6244f4bce1f3822bb25",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "order_counterfactual-v0-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "0e2a3ae88dab872b09f58b14813c276aef39d1f8f2f9397716b7f5a3c17e54df",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "order_counterfactual-v0-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "html",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "0e2a3ae88dab872b09f58b14813c276aef39d1f8f2f9397716b7f5a3c17e54df",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_html-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "58553e7b5118d170d48d45094d0eb1b7db7652176c6dbce42439806a3bbc95a6",
+      "303836e4e37099346f5597103c109a0aa2155ee170c798ad3fb10557482c5c36",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_html-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "none",
+      "none",
+      "none"
+    ],
+    "observation_keys": [
+      "d1d369eee129c1cedc4c8403d126af9f865dd4c674eae2caa87c673d68fd3efd",
+      "db413033a0a29aa7fcdf842be56348a2848d3637be599ed65d7d5514681eb281",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "boolean_then_document-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "c208e104e386a9478e83ef885e758c3bc46e4d00789d0a405851fb4086541a6a",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "boolean_then_document-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "none",
+      "none",
+      "none"
+    ],
+    "observation_keys": [
+      "d1d369eee129c1cedc4c8403d126af9f865dd4c674eae2caa87c673d68fd3efd",
+      "3abe5375f006f3fd3037e51a5665a66cbe82289703d25b32dc9cd16846ee1f1d",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "document_then_sql-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "sql",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "58553e7b5118d170d48d45094d0eb1b7db7652176c6dbce42439806a3bbc95a6",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "document_then_sql-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "parentheses_then_handler-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "3e1fe72ee8589eae2074fc4fc37a6bf0f0a12c4c7f9c2464c26af9fcfca04e5d",
+      "c1356a62530f237b27aaf9e087fdb7f816b69620928cc15ba2433b9c950e6635",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "parentheses_then_handler-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "sql",
+      "none"
+    ],
+    "observation_keys": [
+      "3e1fe72ee8589eae2074fc4fc37a6bf0f0a12c4c7f9c2464c26af9fcfca04e5d",
+      "3e1fe72ee8589eae2074fc4fc37a6bf0f0a12c4c7f9c2464c26af9fcfca04e5d",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_frame-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "58553e7b5118d170d48d45094d0eb1b7db7652176c6dbce42439806a3bbc95a6",
+      "95c7d842fdfa9326e079f222cd0683ba2b0d7ed97b86b3f2165bc6c41e3ce58f",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "comment_then_frame-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "sql",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "bd99574543a6341bdb110b1a5c983ef1c320526b210390474a1e8e13d27ce90d",
+      "6ac08504ee914ce1f923ce47829ac91a1b5e637ad8c0e6244f4bce1f3822bb25",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  },
+  {
+    "id": "order_counterfactual-v1-p",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "document",
+      "html",
+      "none"
+    ],
+    "observation_keys": [
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "303836e4e37099346f5597103c109a0aa2155ee170c798ad3fb10557482c5c36",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": true,
+    "status": "completed"
+  },
+  {
+    "id": "order_counterfactual-v1-n",
+    "mode": "hybrid_exploratory",
+    "families": [
+      "html",
+      "document",
+      "none"
+    ],
+    "observation_keys": [
+      "303836e4e37099346f5597103c109a0aa2155ee170c798ad3fb10557482c5c36",
+      "0cc835db02fe79642f7d4f6f6bd89b72f7a8ef68abf7c9759dc8658d270bd05a",
+      "92afa2facb148f292ee7d6174982f372a4ec7fa24374e499cf088fe59166a3fb"
+    ],
+    "prediction": false,
+    "status": "completed"
+  }
+]

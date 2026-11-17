@@ -1,0 +1,9 @@
+﻿id,mode,style,rps,repeat,status,wall_seconds,events,attack_events,benign_events,takeover_events,attack_cases_taken_over,attack_cases,benign_challenges,benign_locks,benign_friction,in_allowed,llm_calls
+0-llm_async-event-baseline-rps2,llm_async,baseline,2,0,completed,125.1028479000015,180,60,120,42,9,10,6,0,6,116,55
+0-llm_async-event-baseline-rps5,llm_async,baseline,5,0,completed,62.787402300000394,180,60,120,52,9,10,0,0,0,102,30
+0-llm_async-event-baseline-rps10,llm_async,baseline,10,0,completed,62.964291799999046,180,60,120,52,9,10,0,0,0,102,30
+1-llm_async-event-baseline-rps2,llm_async,baseline,2,1,completed,126.70608469999934,180,60,120,42,9,10,7,0,7,116,56
+1-llm_async-event-baseline-rps5,llm_async,baseline,5,1,completed,62.746449199999915,180,60,120,52,9,10,0,0,0,102,30
+1-llm_async-event-baseline-rps10,llm_async,baseline,10,1,completed,62.64301759999944,180,60,120,52,9,10,0,0,0,102,30
+0-llm_sync-event-baseline-rps10,llm_sync,baseline,10,0,completed,381.5704790000018,180,60,120,6,1,10,37,0,37,174,180
+0-none-event-baseline-rps10,none,baseline,10,0,completed,15.013173399998777,180,60,120,52,9,10,0,0,0,102,0

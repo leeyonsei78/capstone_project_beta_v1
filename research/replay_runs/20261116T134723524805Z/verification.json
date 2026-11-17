@@ -1,0 +1,10 @@
+{
+  "campaigns": 15,
+  "requests": 150,
+  "completed": 15,
+  "original_paper_unchanged": true,
+  "http_report_matches_file": true,
+  "raw_response_hashes_verified": true,
+  "unit_tests_passed": 21,
+  "report_verified_after_final_build": true
+}

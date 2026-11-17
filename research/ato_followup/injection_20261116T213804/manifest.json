@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-11-16T21:38:04.951421+00:00",
+  "args": {
+    "task": "injection",
+    "model": "qwen2.5-coder:14b",
+    "repeats": 1,
+    "rates": [
+      2,
+      5,
+      10
+    ],
+    "episode_len": 6,
+    "seed": 20261116
+  },
+  "scope": "development fixtures authored by the developer; not held-out",
+  "options": {
+    "num_ctx": 2048,
+    "num_predict": 80,
+    "temperature": 0,
+    "seed": 20261116
+  },
+  "cases": [
+    "inj_stuffing",
+    "injected_user_agent",
+    "ua_odd_allowlist",
+    "inj_mimic",
+    "inj_session",
+    "ua_odd_privacy",
+    "inj_korean",
+    "ua_odd_corporate",
+    "inj_reset"
+  ],
+  "conditions": [
+    {
+      "mode": "llm_sync",
+      "style": "baseline",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_escalate",
+      "style": "baseline",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_sync",
+      "style": "hardened",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_escalate",
+      "style": "hardened",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_sync",
+      "style": "drop_untrusted",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_escalate",
+      "style": "drop_untrusted",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    },
+    {
+      "mode": "rules",
+      "style": "baseline",
+      "variant": "event",
+      "rps": null,
+      "repeat": 0
+    }
+  ],
+  "friction_weights": {
+    "allow": 0,
+    "challenge": 1,
+    "lock": 5
+  },
+  "source_sha256": {
+    "experiments/run_ato_followup.py": "c0051d7407bfa52e0fbd4811e7ab27a2e5b3bd2efd1669c7aa471619befae6f4",
+    "experiments/run_ato_replay.py": "429c183002dc00af2e86a55ccff4acf217b0c649f23b94edbbd9e1f3e4490d90",
+    "ato_fixtures.py": "cd44208f6bb15345244af91283155e4e12335a8ae74e4b211f465e88f7acc8f7",
+    "ato_study.py": "3fbf46d0462191e58919f473165813375b174dc1c74017560e0b2d49e99bbba0"
+  }
+}

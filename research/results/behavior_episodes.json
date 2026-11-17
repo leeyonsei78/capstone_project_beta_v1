@@ -1,0 +1,7412 @@
+[
+  {
+    "id": "adaptive_single_ip-0",
+    "seed": 0,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.211105462881262,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.211105462881262,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-0",
+    "seed": 0,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.211105462881262,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.211105462881262,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-0",
+    "seed": 0,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.211105462881262,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.21110546288126,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-0",
+    "seed": 0,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.211105462881262,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-0",
+    "seed": 0,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-0",
+    "seed": 0,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.211105462881262,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.211105462881262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.211105462881262,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-0",
+    "seed": 0,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.21110546288126203,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.21110546288126,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-1",
+    "seed": 1,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0335910610281003,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0335910610281003,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-1",
+    "seed": 1,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0335910610281003,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0335910610281003,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-1",
+    "seed": 1,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.033591061028101,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.0335910610281,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-1",
+    "seed": 1,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0335910610281003,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0335910610281003,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-1",
+    "seed": 1,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0335910610281003,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0335910610281003,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0335910610281003,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.0335910610281,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-1",
+    "seed": 1,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0335910610281003,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0335910610281003,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0335910610281003,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-1",
+    "seed": 1,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.033591061028100305,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.0335910610281,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-2",
+    "seed": 2,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2390085679723124,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2390085679723124,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-2",
+    "seed": 2,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.2390085679723124,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.2390085679723124,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-2",
+    "seed": 2,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.239008567972313,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.239008567972313,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-2",
+    "seed": 2,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2390085679723124,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2390085679723124,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-2",
+    "seed": 2,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2390085679723124,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2390085679723124,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2390085679723124,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.239008567972312,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-2",
+    "seed": 2,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.2390085679723124,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2390085679723124,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2390085679723124,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-2",
+    "seed": 2,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.23900856797231235,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.239008567972313,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-3",
+    "seed": 3,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0594911567729728,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.059491156772973,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-3",
+    "seed": 3,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0594911567729728,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.059491156772973,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-3",
+    "seed": 3,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.059491156772973,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.059491156772975,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-3",
+    "seed": 3,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0594911567729728,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.059491156772973,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-3",
+    "seed": 3,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0594911567729728,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.059491156772973,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.059491156772973,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.059491156772973,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-3",
+    "seed": 3,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0594911567729728,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.059491156772973,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.059491156772973,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-3",
+    "seed": 3,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05949115677297284,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.059491156772975,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-4",
+    "seed": 4,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0590120224343587,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0590120224343584,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-4",
+    "seed": 4,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0590120224343587,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0590120224343584,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-4",
+    "seed": 4,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.05901202243436,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.05901202243436,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-4",
+    "seed": 4,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0590120224343587,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0590120224343584,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-4",
+    "seed": 4,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0590120224343587,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0590120224343584,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0590120224343584,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.059012022434358,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-4",
+    "seed": 4,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0590120224343587,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0590120224343584,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0590120224343584,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-4",
+    "seed": 4,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.05901202243435863,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.05901202243436,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-5",
+    "seed": 5,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1557254237224255,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1557254237224255,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-5",
+    "seed": 5,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1557254237224255,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1557254237224255,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-5",
+    "seed": 5,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.155725423722426,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.155725423722426,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-5",
+    "seed": 5,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1557254237224255,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-5",
+    "seed": 5,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-5",
+    "seed": 5,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1557254237224255,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1557254237224255,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1557254237224255,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-5",
+    "seed": 5,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.15572542372242548,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.155725423722426,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-6",
+    "seed": 6,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1983350209404158,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1983350209404158,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-6",
+    "seed": 6,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1983350209404158,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1983350209404158,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-6",
+    "seed": 6,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.198335020940416,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.198335020940416,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-6",
+    "seed": 6,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1983350209404158,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1983350209404158,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-6",
+    "seed": 6,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1983350209404158,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1983350209404158,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1983350209404158,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.198335020940416,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-6",
+    "seed": 6,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1983350209404158,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1983350209404158,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1983350209404158,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-6",
+    "seed": 6,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.19833502094041575,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.198335020940416,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-7",
+    "seed": 7,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0809581912082906,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0809581912082904,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-7",
+    "seed": 7,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0809581912082906,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0809581912082904,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-7",
+    "seed": 7,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.08095819120829,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.08095819120829,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-7",
+    "seed": 7,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0809581912082906,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0809581912082904,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-7",
+    "seed": 7,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0809581912082906,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0809581912082904,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0809581912082904,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.080958191208291,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-7",
+    "seed": 7,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0809581912082906,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0809581912082904,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0809581912082904,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-7",
+    "seed": 7,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.08095819120829059,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.08095819120829,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-8",
+    "seed": 8,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0566764648452622,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0566764648452622,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-8",
+    "seed": 8,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0566764648452622,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0566764648452622,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-8",
+    "seed": 8,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.056676464845262,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.05667646484526,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-8",
+    "seed": 8,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0566764648452622,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-8",
+    "seed": 8,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.056676464845262,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-8",
+    "seed": 8,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0566764648452622,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0566764648452622,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0566764648452622,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-8",
+    "seed": 8,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0566764648452622,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.05667646484526,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-9",
+    "seed": 9,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1157518394537553,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1157518394537553,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-9",
+    "seed": 9,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1157518394537553,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1157518394537553,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-9",
+    "seed": 9,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.115751839453756,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.115751839453754,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-9",
+    "seed": 9,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1157518394537553,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1157518394537553,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-9",
+    "seed": 9,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1157518394537553,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1157518394537553,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1157518394537553,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.115751839453756,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-9",
+    "seed": 9,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1157518394537553,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1157518394537553,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1157518394537553,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-9",
+    "seed": 9,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11575183945375536,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.115751839453754,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-10",
+    "seed": 10,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1428506486724783,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1428506486724785,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-10",
+    "seed": 10,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1428506486724783,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1428506486724785,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-10",
+    "seed": 10,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.142850648672479,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.14285064867248,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-10",
+    "seed": 10,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1428506486724783,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1428506486724785,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-10",
+    "seed": 10,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1428506486724783,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1428506486724785,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1428506486724785,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.1428506486724785,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-10",
+    "seed": 10,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1428506486724783,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1428506486724785,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1428506486724785,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-10",
+    "seed": 10,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.14285064867247838,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.14285064867248,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-11",
+    "seed": 11,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1130948883774547,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1130948883774545,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-11",
+    "seed": 11,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1130948883774547,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1130948883774545,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-11",
+    "seed": 11,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.113094888377455,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.113094888377454,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-11",
+    "seed": 11,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1130948883774547,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1130948883774545,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-11",
+    "seed": 11,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1130948883774547,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1130948883774545,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1130948883774545,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.1130948883774545,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-11",
+    "seed": 11,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1130948883774547,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1130948883774545,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1130948883774545,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-11",
+    "seed": 11,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11309488837745466,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.113094888377454,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-12",
+    "seed": 12,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.118642669672137,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.118642669672137,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-12",
+    "seed": 12,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.118642669672137,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.118642669672137,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-12",
+    "seed": 12,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.118642669672138,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.118642669672138,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-12",
+    "seed": 12,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.118642669672137,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-12",
+    "seed": 12,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-12",
+    "seed": 12,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.118642669672137,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.118642669672137,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.118642669672137,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-12",
+    "seed": 12,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.11864266967213702,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.118642669672138,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-13",
+    "seed": 13,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0647521229288683,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0647521229288683,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-13",
+    "seed": 13,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0647521229288683,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0647521229288683,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-13",
+    "seed": 13,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.06475212292887,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.06475212292887,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-13",
+    "seed": 13,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0647521229288683,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0647521229288683,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-13",
+    "seed": 13,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0647521229288683,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0647521229288683,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0647521229288683,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.064752122928868,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-13",
+    "seed": 13,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0647521229288683,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0647521229288683,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0647521229288683,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-13",
+    "seed": 13,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0647521229288684,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.06475212292887,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-14",
+    "seed": 14,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.026707134425414,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.026707134425414,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-14",
+    "seed": 14,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.026707134425414,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.026707134425414,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-14",
+    "seed": 14,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.026707134425413,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.026707134425415,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-14",
+    "seed": 14,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.026707134425414,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-14",
+    "seed": 14,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-14",
+    "seed": 14,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.026707134425414,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.026707134425414,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.026707134425414,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-14",
+    "seed": 14,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.02670713442541392,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.026707134425415,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-15",
+    "seed": 15,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2413105353880307,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2413105353880307,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-15",
+    "seed": 15,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.2413105353880307,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.2413105353880307,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-15",
+    "seed": 15,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.241310535388031,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.24131053538803,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-15",
+    "seed": 15,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2413105353880307,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2413105353880307,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-15",
+    "seed": 15,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2413105353880307,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2413105353880307,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2413105353880307,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.241310535388031,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-15",
+    "seed": 15,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.2413105353880307,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2413105353880307,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2413105353880307,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-15",
+    "seed": 15,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.24131053538803074,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.24131053538803,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-16",
+    "seed": 16,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0903806937285188,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0903806937285188,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-16",
+    "seed": 16,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0903806937285188,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0903806937285188,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-16",
+    "seed": 16,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.09038069372852,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.09038069372852,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-16",
+    "seed": 16,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0903806937285188,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0903806937285188,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-16",
+    "seed": 16,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0903806937285188,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0903806937285188,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0903806937285188,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.090380693728519,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-16",
+    "seed": 16,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0903806937285188,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0903806937285188,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0903806937285188,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-16",
+    "seed": 16,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.09038069372851879,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.09038069372852,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-17",
+    "seed": 17,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1304959774281234,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.130495977428123,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-17",
+    "seed": 17,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1304959774281234,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.130495977428123,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-17",
+    "seed": 17,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.130495977428124,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.130495977428122,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-17",
+    "seed": 17,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1304959774281234,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.130495977428123,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-17",
+    "seed": 17,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1304959774281234,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.130495977428123,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.130495977428123,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.130495977428123,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-17",
+    "seed": 17,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1304959774281234,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.130495977428123,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.130495977428123,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-17",
+    "seed": 17,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1304959774281233,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.130495977428122,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-18",
+    "seed": 18,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0453162158333054,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.045316215833305,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-18",
+    "seed": 18,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0453162158333054,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.045316215833305,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-18",
+    "seed": 18,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.045316215833305,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.045316215833306,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-18",
+    "seed": 18,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0453162158333054,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.045316215833305,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-18",
+    "seed": 18,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0453162158333054,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.045316215833305,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.045316215833305,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.045316215833306,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-18",
+    "seed": 18,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0453162158333054,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.045316215833305,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.045316215833305,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-18",
+    "seed": 18,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.045316215833305334,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.045316215833306,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-19",
+    "seed": 19,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1692814567000676,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.169281456700068,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-19",
+    "seed": 19,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1692814567000676,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.169281456700068,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-19",
+    "seed": 19,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.169281456700068,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.169281456700066,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-19",
+    "seed": 19,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1692814567000676,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.169281456700068,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-19",
+    "seed": 19,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1692814567000676,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.169281456700068,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.169281456700068,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.169281456700068,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-19",
+    "seed": 19,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1692814567000676,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.169281456700068,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.169281456700068,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-19",
+    "seed": 19,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16928145670006758,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.169281456700066,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-20",
+    "seed": 20,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2264099190436302,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.22640991904363,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-20",
+    "seed": 20,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.2264099190436302,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.22640991904363,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-20",
+    "seed": 20,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.22640991904363,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.22640991904363,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-20",
+    "seed": 20,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2264099190436302,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.22640991904363,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-20",
+    "seed": 20,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2264099190436302,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.22640991904363,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.22640991904363,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.22640991904363,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-20",
+    "seed": 20,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.2264099190436302,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.22640991904363,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.22640991904363,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-20",
+    "seed": 20,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.22640991904363017,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.22640991904363,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-21",
+    "seed": 21,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0412373699582995,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0412373699582993,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-21",
+    "seed": 21,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0412373699582995,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0412373699582993,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-21",
+    "seed": 21,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.0412373699583,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.0412373699583,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-21",
+    "seed": 21,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0412373699582995,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0412373699582993,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-21",
+    "seed": 21,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0412373699582995,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0412373699582993,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0412373699582993,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.041237369958299,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-21",
+    "seed": 21,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0412373699582995,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0412373699582993,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0412373699582993,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-21",
+    "seed": 21,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.04123736995829949,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.0412373699583,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-22",
+    "seed": 22,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2395523449543182,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.239552344954318,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-22",
+    "seed": 22,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.2395523449543182,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.239552344954318,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-22",
+    "seed": 22,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.239552344954319,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.23955234495432,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-22",
+    "seed": 22,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2395523449543182,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.239552344954318,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-22",
+    "seed": 22,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2395523449543182,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.239552344954318,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.239552344954318,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.239552344954318,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-22",
+    "seed": 22,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.2395523449543182,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.239552344954318,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.239552344954318,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-22",
+    "seed": 22,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2395523449543182,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.23955234495432,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-23",
+    "seed": 23,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2312163129064864,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2312163129064864,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-23",
+    "seed": 23,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.2312163129064864,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.2312163129064864,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-23",
+    "seed": 23,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.231216312906486,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.231216312906486,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-23",
+    "seed": 23,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2312163129064864,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2312163129064864,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-23",
+    "seed": 23,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.2312163129064864,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2312163129064864,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2312163129064864,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.231216312906486,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-23",
+    "seed": 23,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.2312163129064864,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.2312163129064864,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.2312163129064864,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-23",
+    "seed": 23,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.2312163129064863,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.231216312906486,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-24",
+    "seed": 24,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1780857469567296,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1780857469567296,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-24",
+    "seed": 24,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1780857469567296,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.1780857469567296,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-24",
+    "seed": 24,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.178085746956729,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.17808574695673,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-24",
+    "seed": 24,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1780857469567296,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1780857469567296,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-24",
+    "seed": 24,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1780857469567296,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1780857469567296,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1780857469567296,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.17808574695673,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-24",
+    "seed": 24,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1780857469567296,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.1780857469567296,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.1780857469567296,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-24",
+    "seed": 24,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.17808574695672963,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.17808574695673,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-25",
+    "seed": 25,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0942405755975966,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0942405755975964,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-25",
+    "seed": 25,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0942405755975966,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0942405755975964,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-25",
+    "seed": 25,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.094240575597597,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.094240575597595,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-25",
+    "seed": 25,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0942405755975966,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0942405755975964,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-25",
+    "seed": 25,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0942405755975966,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0942405755975964,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0942405755975964,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.094240575597596,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-25",
+    "seed": 25,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0942405755975966,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0942405755975964,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0942405755975964,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-25",
+    "seed": 25,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.0942405755975965,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.094240575597595,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-26",
+    "seed": 26,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.186822816555821,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.186822816555821,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-26",
+    "seed": 26,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.186822816555821,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.186822816555821,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-26",
+    "seed": 26,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.186822816555821,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.18682281655582,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-26",
+    "seed": 26,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.186822816555821,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-26",
+    "seed": 26,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-26",
+    "seed": 26,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.186822816555821,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.186822816555821,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.186822816555821,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-26",
+    "seed": 26,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.1868228165558209,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.18682281655582,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-27",
+    "seed": 27,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1621243049947207,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.162124304994721,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-27",
+    "seed": 27,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1621243049947207,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.162124304994721,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-27",
+    "seed": 27,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.162124304994721,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.16212430499472,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-27",
+    "seed": 27,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1621243049947207,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.162124304994721,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-27",
+    "seed": 27,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1621243049947207,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.162124304994721,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.162124304994721,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.1621243049947205,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-27",
+    "seed": 27,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1621243049947207,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.162124304994721,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.162124304994721,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-27",
+    "seed": 27,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.16212430499472077,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.16212430499472,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-28",
+    "seed": 28,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0282392925440407,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0282392925440407,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-28",
+    "seed": 28,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.0282392925440407,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.0282392925440407,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-28",
+    "seed": 28,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.028239292544042,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.02823929254404,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-28",
+    "seed": 28,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0282392925440407,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0282392925440407,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-28",
+    "seed": 28,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.0282392925440407,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0282392925440407,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0282392925440407,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.028239292544041,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-28",
+    "seed": 28,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.0282392925440407,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.0282392925440407,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.0282392925440407,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-28",
+    "seed": 28,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.028239292544040756,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.02823929254404,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_single_ip-29",
+    "seed": 29,
+    "kind": "adaptive_single_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1370297634529247,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.137029763452925,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_rotating_ip-29",
+    "seed": 29,
+    "kind": "adaptive_rotating_ip",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "q",
+        "hour": 1.1370297634529247,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "r",
+        "hour": 2.137029763452925,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "adaptive_slow-29",
+    "seed": 29,
+    "kind": "adaptive_slow",
+    "positive": true,
+    "onset": 1,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 10.137029763452924,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 20.137029763452926,
+        "technique": "comment",
+        "suspicious": true,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_encoding_diversity-29",
+    "seed": 29,
+    "kind": "benign_encoding_diversity",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1370297634529247,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.137029763452925,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_authorization_retries-29",
+    "seed": 29,
+    "kind": "benign_authorization_retries",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 1.1370297634529247,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.137029763452925,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.137029763452925,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 4.137029763452925,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 403
+      }
+    ]
+  },
+  {
+    "id": "benign_shared_nat-29",
+    "seed": 29,
+    "kind": "benign_shared_nat",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "plain",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "other",
+        "ip": "p",
+        "hour": 1.1370297634529247,
+        "technique": "url",
+        "suspicious": true,
+        "response_status": 403
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 2.137029763452925,
+        "technique": "plain",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 3.137029763452925,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  },
+  {
+    "id": "benign_expired_history-29",
+    "seed": 29,
+    "kind": "benign_expired_history",
+    "positive": false,
+    "onset": null,
+    "events": [
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 0.13702976345292478,
+        "technique": "url",
+        "suspicious": false,
+        "response_status": 200
+      },
+      {
+        "actor": "a",
+        "ip": "p",
+        "hour": 25.137029763452926,
+        "technique": "html",
+        "suspicious": false,
+        "response_status": 200
+      }
+    ]
+  }
+]

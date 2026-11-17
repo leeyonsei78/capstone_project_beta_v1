@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-11-16T21:41:53.978875+00:00",
+  "args": {
+    "task": "rate",
+    "model": "qwen2.5-coder:14b",
+    "repeats": 2,
+    "rates": [
+      2,
+      5,
+      10
+    ],
+    "episode_len": 6,
+    "seed": 20261116
+  },
+  "scope": "development fixtures authored by the developer; not held-out",
+  "options": {
+    "num_ctx": 2048,
+    "num_predict": 80,
+    "temperature": 0,
+    "seed": 20261116
+  },
+  "cases": [
+    "travel_vpn_new_device",
+    "long_dormant",
+    "typo_then_ok",
+    "routine_b",
+    "self_reset_known",
+    "mimic_known_device_odd_hour",
+    "spray_slow",
+    "forgot_pw_many_fails",
+    "business_trip",
+    "office_nat_b",
+    "stuffing_invalid",
+    "office_nat_a",
+    "vpn_known_device",
+    "typo_heavy",
+    "new_phone_home",
+    "night_shift",
+    "shared_family_pc",
+    "session_reuse_far",
+    "impossible_travel",
+    "reset_abuse",
+    "routine_a",
+    "self_reset_new_device",
+    "mimic_home_new_device",
+    "fails_then_valid",
+    "cgnat_mobile",
+    "mobile_ip_change",
+    "late_evening_home",
+    "stuffing_valid",
+    "injected_user_agent",
+    "travel_new_device"
+  ],
+  "conditions": [
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 2,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 5,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 10,
+      "repeat": 0
+    },
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 2,
+      "repeat": 1
+    },
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 5,
+      "repeat": 1
+    },
+    {
+      "mode": "llm_async",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 10,
+      "repeat": 1
+    },
+    {
+      "mode": "llm_sync",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 10,
+      "repeat": 0
+    },
+    {
+      "mode": "none",
+      "style": "baseline",
+      "variant": "event",
+      "rps": 10,
+      "repeat": 0
+    }
+  ],
+  "friction_weights": {
+    "allow": 0,
+    "challenge": 1,
+    "lock": 5
+  },
+  "source_sha256": {
+    "experiments/run_ato_followup.py": "c0051d7407bfa52e0fbd4811e7ab27a2e5b3bd2efd1669c7aa471619befae6f4",
+    "experiments/run_ato_replay.py": "429c183002dc00af2e86a55ccff4acf217b0c649f23b94edbbd9e1f3e4490d90",
+    "ato_fixtures.py": "cd44208f6bb15345244af91283155e4e12335a8ae74e4b211f465e88f7acc8f7",
+    "ato_study.py": "3fbf46d0462191e58919f473165813375b174dc1c74017560e0b2d49e99bbba0"
+  }
+}

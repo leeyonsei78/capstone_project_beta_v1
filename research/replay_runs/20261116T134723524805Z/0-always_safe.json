@@ -1,0 +1,228 @@
+{
+  "id": "0-always_safe",
+  "model": "qwen2.5-coder:14b",
+  "mode": "always_safe",
+  "repeat": 0,
+  "calls": [],
+  "events": [],
+  "trials": [
+    {
+      "index": 0,
+      "case": "admin_ok",
+      "attack": false,
+      "username": "admin",
+      "expected": [
+        "admin"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "admin"
+        ],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 2.617999999984022,
+      "response_sha256": "79e3d22645a933baeced21ad4ec2e36124ca59f58db27fae649fa8c0429fe943",
+      "decision_to_response_ms": 2.670900000111942,
+      "response_seconds": 0.002717099999927086,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 1,
+      "case": "student_ok",
+      "attack": false,
+      "username": "student",
+      "expected": [
+        "student"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "student"
+        ],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 2.929799999947136,
+      "response_sha256": "cf093b06131bf71f17d2ae2ad5236930b31a365bf8f22f60a62a754982daa2fa",
+      "decision_to_response_ms": 3.0040999999982887,
+      "response_seconds": 0.5060159999998177,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 2,
+      "case": "boolean_no_comment",
+      "attack": true,
+      "username": "' OR '1'='1' OR 'a'='b",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 1.3022999999066087,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 1.3257000000521657,
+      "response_seconds": 1.007447799999909,
+      "attack_success": false,
+      "normal_preserved": false
+    },
+    {
+      "index": 3,
+      "case": "missing_user",
+      "attack": false,
+      "username": "missing",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 1.3856999999006803,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 1.4118000001417386,
+      "response_seconds": 1.5091236999999182,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 4,
+      "case": "wrong_password",
+      "attack": false,
+      "username": "student",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 3.6052000000381668,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 3.6539000000175292,
+      "response_seconds": 2.0128734999998414,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 5,
+      "case": "apostrophe_ok",
+      "attack": false,
+      "username": "O'Reilly",
+      "expected": [
+        "O'Reilly"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "O'Reilly"
+        ],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 3.5926000000472413,
+      "response_sha256": "40e9223f5ea495c18f610668669b52d32b29c657752512486ea055aa269ffe6e",
+      "decision_to_response_ms": 3.6493000000064058,
+      "response_seconds": 2.5168558999998822,
+      "attack_success": false,
+      "normal_preserved": true
+    },
+    {
+      "index": 6,
+      "case": "boolean_comment",
+      "attack": true,
+      "username": "' OR 1=1 -- ",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 1.6697999999450985,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 1.7155000000457221,
+      "response_seconds": 3.018855899999835,
+      "attack_success": false,
+      "normal_preserved": false
+    },
+    {
+      "index": 7,
+      "case": "comment",
+      "attack": true,
+      "username": "admin' -- ",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 1.8967000000884582,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 1.9328000000768952,
+      "response_seconds": 3.5211188999999194,
+      "attack_success": false,
+      "normal_preserved": false
+    },
+    {
+      "index": 8,
+      "case": "boolean_parentheses",
+      "attack": true,
+      "username": "' OR(1=1) OR name='",
+      "expected": [],
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 2.4664000000029773,
+      "response_sha256": "88445e9d92a647af588ce9eefdbe715b40c4aaa02d1bde4daadd80e88e9e8816",
+      "decision_to_response_ms": 2.491699999836783,
+      "response_seconds": 4.024077499999976,
+      "attack_success": false,
+      "normal_preserved": false
+    },
+    {
+      "index": 9,
+      "case": "hyphen_ok",
+      "attack": false,
+      "username": "team--blue",
+      "expected": [
+        "team--blue"
+      ],
+      "status": 200,
+      "body": {
+        "authenticated_users": [
+          "team--blue"
+        ],
+        "error": null
+      },
+      "policy_active": true,
+      "http_ms": 3.7167000000408734,
+      "response_sha256": "f025eba0cee4644d899239ee5c0955a7002187eb5fbb57eb4b0c680650601fbd",
+      "decision_to_response_ms": 3.7675999999464693,
+      "response_seconds": 4.5280200999998215,
+      "attack_success": false,
+      "normal_preserved": true
+    }
+  ],
+  "status": "completed",
+  "policy_effective_seconds": 0.0,
+  "wall_seconds": 4.528045599999814,
+  "summary": {
+    "attack_requests": 4,
+    "attack_successes": 0,
+    "normal_requests": 6,
+    "normal_preserved": 6,
+    "normal_rule_blocks": 0,
+    "pre_patch_successes": 0,
+    "llm_calls": 0
+  }
+}

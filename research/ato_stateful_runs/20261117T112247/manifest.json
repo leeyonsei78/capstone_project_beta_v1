@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-17T11:22:47.998990+00:00",
+  "scope": "corrective re-validation of \u00a76.13 weaknesses; rules-based; per-event + case-level; dev=ato_fixtures.CASES vs independent holdout",
+  "ip_thresh": 5,
+  "holdout_authored_by": "blind general-purpose subagent, rules-unseen",
+  "holdout_cases": 23,
+  "dev_cases": 30,
+  "limitation": "corrective rules are author-designed; re-validated on the same rules-blind holdout",
+  "source_sha256": {
+    "experiments/run_ato_stateful.py": "e78dcd524fd2dfed0f118835124ba60527d841bad9e1cdc883a18b9bfe55900a",
+    "ato_stateful.py": "aef8d7f96adc59d38df7ac44ce3f11c8c1a302aae76e389b07a5975bf457e533",
+    "ato_fixtures.py": "2c80634dbc406d50902ae68b11aa87c9395de284cb1caf107741b6a7e7f501bc",
+    "ato_holdout.py": "297cdb31caa4dcb6c9f4becebc0c8c5450b5635317fd561d2edd4fba668765db"
+  }
+}

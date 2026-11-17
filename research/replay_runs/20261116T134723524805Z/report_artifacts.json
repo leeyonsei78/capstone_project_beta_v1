@@ -1,0 +1,11 @@
+{
+  "research/PAPER_LOCAL_STUDY.md": "61d673e3e293a55742365f1a9df79ca6353ac125cdbfbcb83c96ec1fc96e386a",
+  "research/results/paper_revision.html": "b77bde899719512467bafb7302690014f9d6004a34c1bc70c6c4f24606febe9f",
+  "research/results/local_study_summary.json": "e8bdcccda691a3b4c18760594b50a89d96d0207ce903485815abd442cfe5301f",
+  "research/results/local_study_summary.csv": "ec510e6d8ed6008d6688f34df3ccb5b2879482487bded3d95826871187ec70b0",
+  "research/results/sql_replay_results.png": "ec1440fcadc9a0cfc58733399025dd0813f46269b09e74acc2ed9b138fa0c4a8",
+  "research/results/sql_replay_results.svg": "25e8cddb008709a335e3c15061db426d139d586fb1263120ce3ddce061937f43",
+  "experiments/build_local_paper.py": "423551a89f21cb993f00a9f1c8516cdf0f87701b4106ee18bcb3bd0f656aec8e",
+  "test_sql_replay.py": "0582fdbda85622a1a9b3c2b7f89b56122df444469aaa7733477227d74d8896b9",
+  "research/SQL_REPLAY_PROTOCOL.md": "640ab132e92ad8ef0d90856d493e0c3077ae7c2d63a400dbd625255013952ca7"
+}

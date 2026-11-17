@@ -1,0 +1,7 @@
+﻿detector,split,accuracy,benign_friction,benign_locks,attack_miss_rate,attack_caught_ci_lo,attack_caught_ci_hi
+rules,dev,0.8302,42,7,0.0952,0.7109,0.9735
+rules,holdout,0.9091,13,2,0.0588,0.7302,0.9895
+rules2,dev,0.8113,58,10,0.0,0.8454,1.0
+rules2,holdout,0.8182,29,5,0.0588,0.7302,0.9895
+rules3,dev,0.9434,23,3,0.0,0.8454,1.0
+rules3,holdout,0.9697,7,0,0.0588,0.7302,0.9895

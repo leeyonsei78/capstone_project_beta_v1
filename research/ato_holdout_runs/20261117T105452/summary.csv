@@ -1,0 +1,5 @@
+﻿split,mode,cases,events,accuracy,acc_ci_lo,acc_ci_hi,benign_events,benign_correct,benign_friction,benign_challenges,benign_locks,attack_events,attack_caught,attack_misses,attack_miss_rate
+dev,rules,30,53,0.8302,0.7077,0.908,32,25,42,7,7,21,19,2,0.0952
+holdout,rules,23,33,0.9091,0.7643,0.9686,16,14,13,3,2,17,16,1,0.0588
+dev,rules2,30,53,0.8113,0.6864,0.8941,32,22,58,8,10,21,21,0,0.0
+holdout,rules2,23,33,0.8182,0.6561,0.9139,16,11,29,4,5,17,16,1,0.0588

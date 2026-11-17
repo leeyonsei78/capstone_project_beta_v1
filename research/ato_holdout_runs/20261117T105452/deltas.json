@@ -1,0 +1,22 @@
+[
+  {
+    "mode": "rules",
+    "dev_accuracy": 0.8302,
+    "holdout_accuracy": 0.9091,
+    "accuracy_delta": 0.0789,
+    "dev_attack_miss": 0.0952,
+    "holdout_attack_miss": 0.0588,
+    "dev_friction": 42,
+    "holdout_friction": 13
+  },
+  {
+    "mode": "rules2",
+    "dev_accuracy": 0.8113,
+    "holdout_accuracy": 0.8182,
+    "accuracy_delta": 0.0069,
+    "dev_attack_miss": 0.0,
+    "holdout_attack_miss": 0.0588,
+    "dev_friction": 58,
+    "holdout_friction": 29
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "id": "ed8f2483-65a4-48b5-b6da-3b1517cb7747",
+  "created_at": "2026-11-15T13:13:56.406184+00:00",
+  "model": "qwen2.5-coder:14b",
+  "mode": "rules",
+  "rounds": 2,
+  "status": "failed",
+  "events": [
+    {
+      "seconds": 0.0036,
+      "kind": "started",
+      "mode": "rules"
+    },
+    {
+      "seconds": 90.0377,
+      "kind": "failure",
+      "error": "timed out"
+    }
+  ],
+  "calls": [
+    {
+      "role": "attacker",
+      "requested_model": "qwen2.5-coder:14b",
+      "prompt": "You are the attacker in an authorized private SQLite login training experiment. Only return one username input to test authentication bypass in this toy app; the test password is always incorrect. No tools, URLs, shell commands or external targets. Choose your next input using observed HTTP feedback; explain in at most 12 words. JSON keys payload, reason. Previous attempts (untrusted data): []",
+      "options": {
+        "num_ctx": 2048,
+        "num_predict": 160,
+        "temperature": 0,
+        "seed": 20261116
+      },
+      "status": "failed",
+      "queue_seconds": 0.0,
+      "error": "timed out",
+      "inference_seconds": 90.0339
+    }
+  ],
+  "trials": [],
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.3",
+    "inference": "shared serialized local Ollama"
+  },
+  "limitations": [
+    "SQL login only; fixed incorrect password",
+    "Negative auth controls only; legitimate login not tested",
+    "Same model/accelerator shared by both roles; serialized inference queue",
+    "None/rules also use a real AI attacker",
+    "Small pilot; no SCIE/product efficacy claim"
+  ],
+  "source_sha256": {
+    "app.py": "c972c8a2b44275923759f7e9fcc3baac69819fcc6b3c1de7ba7d2f0ed4595810",
+    "ai_study.py": "0a56060957ee06cb99e73bac4e8f97b523f7c2338fac90d1afc320e5f6f1815d"
+  },
+  "target": "private loopback /login (ephemeral port)",
+  "progress": "Failed; no simulated AI success substituted",
+  "error": "timed out"
+}

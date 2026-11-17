@@ -1,0 +1,215 @@
+{
+  "built_at": "2026-11-16T13:54:01.950974+00:00",
+  "replay_folder": "research\\replay_runs\\20261116T134723524805Z",
+  "replay_manifest_sha256": "e77b416e8476abb8d74bae2e0bf2699181dab79558f34fad28a7d41e8472d28a",
+  "replay_files": {
+    "0-ai_async.json": "c13d7b25a7f3836bbce6c9263c92a0c9afc50894ec3d38e8e2c6d73cfc05bcad",
+    "0-ai_sync.json": "49c485e5f61be0eb3a406fc0b3e212cda3628ad3760700030c215e86e809b9bb",
+    "0-always_safe.json": "5d01807c115e316542aa42c4261c7fe969a0219a2dcdf16c4a3093d496ed57a5",
+    "0-none.json": "4b9d2fd44204007042dd2b1541bbad265986c308469575f1600375d20f083f8c",
+    "0-rules.json": "7bde0ef808312f3e99319986b9a15078d495c3cb15121503286f49a523790952",
+    "1-ai_async.json": "b8d21d27c16abf961896382dc82a2c4e8fe287065049103c922de30259540b3c",
+    "1-ai_sync.json": "ff9d1cd325442bf09ed81d55dd4419c861866413295d746ab05c26d49fb37140",
+    "1-always_safe.json": "85832973a3a2fdfa6f7aa3b75805ade4a85fb1f74d6a5f6d91917b54b063c9e5",
+    "1-none.json": "4441519e9c961d4af22c88212df2ac0a28abd917e0e5e0d51bc68f84e741fd66",
+    "1-rules.json": "1ab862df4ab6277c7449147e3f31e401642533f35a30b6abdd5fccbecb3e3394",
+    "2-ai_async.json": "4023c711958786420fa67f65b0c8cfe54cf30168e09649f4377dd846eb83513f",
+    "2-ai_sync.json": "0d04771d27581848a1132d2f5d668c2f75535d3aaad11b8ab5aefbbbd89c8518",
+    "2-always_safe.json": "e766faf41aabca1c58457e92302b57d1e15d0f2863bae5b35e7e2f02ef99233c",
+    "2-none.json": "1debc227bf0a76fd49fbee286f85ed61e2bcf469c2a1614bc595f6593cedbc23",
+    "2-rules.json": "aedaa1359c84382c515fd5be42abfb7c4b983e971ac7a0c57de4518de8e8b2b4",
+    "manifest.json": "e77b416e8476abb8d74bae2e0bf2699181dab79558f34fad28a7d41e8472d28a",
+    "results.json": "019ac950c911a498e6970c9541a39cd0a8417426035996d304108ebd604e616b",
+    "verification.json": "6165ff56cf2bd4d244f5aa4e149ec318d41623c09056d270489dcd3a33a36497"
+  },
+  "manual_files": [
+    {
+      "file": "research\\ai_runs\\7166e2f0-1a1e-4ea8-83cb-4c0942c85d34.json",
+      "id": "7166e2f0-1a1e-4ea8-83cb-4c0942c85d34",
+      "sha256": "623cdaab07bd45f5564cc5be26437b2d566e3dbbaf9e63ff567963556f5f76d1"
+    },
+    {
+      "file": "research\\ai_runs\\ed8f2483-65a4-48b5-b6da-3b1517cb7747.json",
+      "id": "ed8f2483-65a4-48b5-b6da-3b1517cb7747",
+      "sha256": "c661bae73eed6355093f561d843597b3d1309166d099a0ce127544c2b0b0341e"
+    },
+    {
+      "file": "research\\ai_runs\\5a11a51b-832f-47cf-a2c6-33bb8ac0276c.json",
+      "id": "5a11a51b-832f-47cf-a2c6-33bb8ac0276c",
+      "sha256": "3c22eb5a9b59fec854c520fd93afc992ebec1dcc34e83cfbbe7d8f9f11191aff"
+    },
+    {
+      "file": "research\\ai_runs\\95d587f9-a5a0-43ca-9b16-1989459afd83.json",
+      "id": "95d587f9-a5a0-43ca-9b16-1989459afd83",
+      "sha256": "af15f3d41ae4d5b1329202396693fce2eaae0a58b090fe20cfa9b241f90b35d3"
+    },
+    {
+      "file": "research\\ai_runs\\24beba4f-5ad8-4891-b4a1-febce39ac194.json",
+      "id": "24beba4f-5ad8-4891-b4a1-febce39ac194",
+      "sha256": "cfbb1b01b4c9d55049af0ec837fad4a4c6de93f0bcd5390dfb4242f36638a7fa"
+    },
+    {
+      "file": "research\\ai_runs\\1ffc5149-aec7-4cd2-832a-29502b8a38d0.json",
+      "id": "1ffc5149-aec7-4cd2-832a-29502b8a38d0",
+      "sha256": "e8ef78f0c3fefebdc70a2c956dea12bf96201344ce337cd0c653ee6b2d02316d"
+    },
+    {
+      "file": "research\\ai_runs\\d4d46886-64ef-481b-94cd-077585e84ec2.json",
+      "id": "d4d46886-64ef-481b-94cd-077585e84ec2",
+      "sha256": "0cca35e0df8f0823018759018a514b154e983bfdce8bf3ca660e40b0c5d04033"
+    },
+    {
+      "file": "research\\ai_runs\\ae0699d8-36c1-4822-81b2-b8fed2713634.json",
+      "id": "ae0699d8-36c1-4822-81b2-b8fed2713634",
+      "sha256": "ee251f61fbab139c088d767b2f4a4a42e1347a4187ac5fb1a7d32cf7f6eceb6a"
+    },
+    {
+      "file": "research\\ai_runs\\c6d996bc-598f-4665-adad-1404069354d3.json",
+      "id": "c6d996bc-598f-4665-adad-1404069354d3",
+      "sha256": "16b8e2d60759707cca87c09449ac5970c7d02cc1389728778d7ce5a5d7a5e91a"
+    },
+    {
+      "file": "research\\ai_runs\\e1396cfa-0e32-4ec5-89d8-37a298189bc1.json",
+      "id": "e1396cfa-0e32-4ec5-89d8-37a298189bc1",
+      "sha256": "9f344ba1727fc97c30b663aab083664b6b939a2b6a1a9c3b3203de9da77ae42d"
+    },
+    {
+      "file": "research\\ai_runs\\6019b038-d649-49b1-b087-ba4c00873cd0.json",
+      "id": "6019b038-d649-49b1-b087-ba4c00873cd0",
+      "sha256": "64b537db48981449bc98d98ca8d77efdb056f4870fddf02dcefb6e60c71361e6"
+    },
+    {
+      "file": "research\\ai_runs\\0e29a721-0964-4d5c-b080-edcbb57ef2c6.json",
+      "id": "0e29a721-0964-4d5c-b080-edcbb57ef2c6",
+      "sha256": "c0bb5486c777b8a0846a54a0581112389484145be5b7aa3a9242aeedd213a51a"
+    },
+    {
+      "file": "research\\ai_runs\\64af540c-dcd2-488c-ac76-5998fd2e011b.json",
+      "id": "64af540c-dcd2-488c-ac76-5998fd2e011b",
+      "sha256": "5140fd8001b2046d7f87cfa82a003ca0b2316be8b03102160cb9d9f962640110"
+    }
+  ],
+  "original_paper": {
+    "original_file": "C:\\Users\\user\\Downloads\\LLM 기반 적응형 공격 방어 시스템 논문 초안.html",
+    "sha256": "fbb67cb71220a3334181e458f955b62d06d6960a1d59e76b5813f191478c207d",
+    "scope": "Original Downloads file left unchanged",
+    "results_created_at": "2026-11-15T12:59:00.395659+00:00"
+  },
+  "aggregates": [
+    {
+      "mode": "none",
+      "completed": 3,
+      "failed": 0,
+      "attack_requests": 12,
+      "attack_successes": 12,
+      "normal_requests": 18,
+      "normal_preserved": 15,
+      "positive_logins": 12,
+      "positive_logins_preserved": 9,
+      "normal_rule_blocks": 0,
+      "pre_patch_successes": 12,
+      "compromised_campaigns": 3,
+      "llm_calls": 0,
+      "inference_seconds": 0,
+      "queue_seconds": 0,
+      "prompt_tokens": 0,
+      "output_tokens": 0,
+      "http_p50_ms": 2.7761999999711406,
+      "http_p95_ms": 23.205400000051668,
+      "decision_p95_ms": 23.239200000034543,
+      "mean_wall_seconds": 4.568995166666582
+    },
+    {
+      "mode": "rules",
+      "completed": 3,
+      "failed": 0,
+      "attack_requests": 12,
+      "attack_successes": 3,
+      "normal_requests": 18,
+      "normal_preserved": 12,
+      "positive_logins": 12,
+      "positive_logins_preserved": 6,
+      "normal_rule_blocks": 3,
+      "pre_patch_successes": 3,
+      "compromised_campaigns": 3,
+      "llm_calls": 0,
+      "inference_seconds": 0,
+      "queue_seconds": 0,
+      "prompt_tokens": 0,
+      "output_tokens": 0,
+      "http_p50_ms": 2.9618000000937172,
+      "http_p95_ms": 25.027500000078362,
+      "decision_p95_ms": 25.084499999820764,
+      "mean_wall_seconds": 4.570109966666678
+    },
+    {
+      "mode": "always_safe",
+      "completed": 3,
+      "failed": 0,
+      "attack_requests": 12,
+      "attack_successes": 0,
+      "normal_requests": 18,
+      "normal_preserved": 18,
+      "positive_logins": 12,
+      "positive_logins_preserved": 12,
+      "normal_rule_blocks": 0,
+      "pre_patch_successes": 0,
+      "compromised_campaigns": 0,
+      "llm_calls": 0,
+      "inference_seconds": 0,
+      "queue_seconds": 0,
+      "prompt_tokens": 0,
+      "output_tokens": 0,
+      "http_p50_ms": 2.5399999999535794,
+      "http_p95_ms": 24.668600000040897,
+      "decision_p95_ms": 24.69780000001265,
+      "mean_wall_seconds": 4.55739736666654
+    },
+    {
+      "mode": "ai_sync",
+      "completed": 3,
+      "failed": 0,
+      "attack_requests": 12,
+      "attack_successes": 0,
+      "normal_requests": 18,
+      "normal_preserved": 18,
+      "positive_logins": 12,
+      "positive_logins_preserved": 12,
+      "normal_rule_blocks": 0,
+      "pre_patch_successes": 0,
+      "compromised_campaigns": 0,
+      "llm_calls": 3,
+      "inference_seconds": 15.5905,
+      "queue_seconds": 0.0,
+      "prompt_tokens": 279,
+      "output_tokens": 24,
+      "http_p50_ms": 2.1389999999428255,
+      "http_p95_ms": 23.25380000002042,
+      "decision_p95_ms": 2031.3492999998743,
+      "mean_wall_seconds": 9.769360433333304
+    },
+    {
+      "mode": "ai_async",
+      "completed": 3,
+      "failed": 0,
+      "attack_requests": 12,
+      "attack_successes": 3,
+      "normal_requests": 18,
+      "normal_preserved": 16,
+      "positive_logins": 12,
+      "positive_logins_preserved": 10,
+      "normal_rule_blocks": 0,
+      "pre_patch_successes": 3,
+      "compromised_campaigns": 3,
+      "llm_calls": 3,
+      "inference_seconds": 5.509600000000001,
+      "queue_seconds": 0.0,
+      "prompt_tokens": 279,
+      "output_tokens": 24,
+      "http_p50_ms": 2.81989999984944,
+      "http_p95_ms": 26.684899999963818,
+      "decision_p95_ms": 26.719999999841093,
+      "mean_wall_seconds": 4.567487066666672
+    }
+  ]
+}

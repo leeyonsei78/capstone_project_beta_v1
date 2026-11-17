@@ -1,0 +1,37 @@
+[
+  {
+    "mode": "rules",
+    "benign_events": 32,
+    "benign_challenges": 7,
+    "benign_locks": 7,
+    "benign_friction": 42
+  },
+  {
+    "mode": "rules2",
+    "benign_events": 32,
+    "benign_challenges": 8,
+    "benign_locks": 10,
+    "benign_friction": 58
+  },
+  {
+    "mode": "llm_sync",
+    "benign_events": 32,
+    "benign_challenges": 12,
+    "benign_locks": 0,
+    "benign_friction": 12
+  },
+  {
+    "mode": "llm_escalate",
+    "benign_events": 32,
+    "benign_challenges": 13,
+    "benign_locks": 7,
+    "benign_friction": 48
+  },
+  {
+    "mode": "llm_history",
+    "benign_events": 32,
+    "benign_challenges": 11,
+    "benign_locks": 0,
+    "benign_friction": 11
+  }
+]

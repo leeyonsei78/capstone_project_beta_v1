@@ -1,0 +1,50 @@
+PROVENANCE RECORD — prompt given to the blind holdout-authoring subagent.
+
+The holdout cases in ato_holdout_cases.json were authored by a fresh
+general-purpose subagent (cold start; it did NOT inherit this session's context
+and made ZERO tool calls, so it never read ato_fixtures.py, the detection rules,
+or the development cases). It worked purely from the specification below. This
+operationalizes "independent authoring, rules hidden" and breaks the study's
+circularity. Honest limitation: the author is still an AI subagent, not a human
+third party — this is rules-blind, separate-context independence.
+
+Authored: 2026-11-17. Returned 23 cases (12 benign, 11 attack).
+
+================= PROMPT GIVEN TO THE SUBAGENT =================
+
+You are authoring a held-out test set for a security research study on
+account-takeover (ATO) defense. Work ONLY from the specification below.
+
+HARD CONSTRAINTS (critical for validity):
+- Do NOT read, open, search, or inspect ANY files in the working directory or
+  anywhere on disk. Do not use Read/Grep/Glob/Bash to look at code. Your cases
+  must be authored blind, purely from this spec.
+- In particular you must remain unaware of any detection rules, thresholds, or
+  existing test cases. Do not try to find or infer them.
+- Base your ground-truth ONLY on real-world plausibility (could a genuine account
+  owner plausibly produce these events?), never on any assumed detection logic or
+  threshold.
+- Output your result as your FINAL MESSAGE, as a single strict JSON document and
+  nothing else (no markdown fences, no commentary). I will save it verbatim.
+
+PROBLEM SETTING:
+A defender protects a private login service against account takeover. For each
+login-related event the defender must choose exactly one action:
+  allow / challenge / lock  (definitions as in the paper).
+
+EVENT SCHEMA: event_type (login|session_use|password_reset), credential_ok,
+geo, device_known, local_hour (0-23), recent_fail_count, ip_distinct_accounts,
+impossible_travel, user_agent (client-supplied, untrusted).
+PROFILE: home_geo, usual_hours [low,high] (may wrap), known_devices.
+
+CASE OBJECT: id, label (benign|attack), category (free form), events[], allowed[]
+(benign usually [allow,challenge] or [challenge] when risky-but-legit, never lock;
+attack [challenge,lock]), profile, rationale (one sentence).
+
+REQUIREMENTS: exactly 24 cases (12 benign + 12 attack); diverse realistic
+scenarios; at least 2 attack cases with prompt-injection user_agents (incl. one
+non-English); make it genuinely challenging (benign cases that look risky, attack
+cases that look normal) so the set is not trivially separable.
+
+(Full verbatim prompt is preserved in the session transcript; this file records
+its substance for reproducibility.)

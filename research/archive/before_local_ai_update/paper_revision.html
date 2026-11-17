@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM 기반 적응형 공격 방어 시스템 논문</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Serif KR', Georgia, serif; background: #f8f7f4; color: #1a1a1a; line-height: 1.8; }
+
+  /* 네비게이션 */
+  nav { position: fixed; top: 0; left: 0; width: 220px; height: 100vh; background: #1e2a3a; color: #cdd6e0; padding: 24px 16px; overflow-y: auto; z-index: 100; font-family: 'Noto Sans KR', sans-serif; font-size: 13px; }
+  nav h3 { color: #7eb8f7; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #2e3f54; }
+  nav a { display: block; padding: 5px 8px; color: #9fb6cc; text-decoration: none; border-radius: 4px; margin-bottom: 2px; transition: all 0.2s; }
+  nav a:hover, nav a.active { background: #2e4060; color: #7eb8f7; }
+  nav .section-num { color: #4a6080; margin-right: 6px; }
+
+  /* 본문 */
+  main { margin-left: 220px; padding: 48px 60px 80px; max-width: 960px; }
+
+  /* 헤더 */
+  .paper-header { text-align: center; padding: 48px 0 40px; border-bottom: 2px solid #2a3f5a; margin-bottom: 40px; }
+  .paper-header h1 { font-size: 22px; font-weight: 700; line-height: 1.4; color: #0d1f33; margin-bottom: 8px; }
+  .paper-header .subtitle { font-size: 14px; color: #5a7a9a; font-style: italic; margin-bottom: 24px; }
+  .authors { font-size: 14px; color: #2a4a6a; margin-bottom: 6px; }
+  .affiliation { font-size: 12px; color: #6a8aaa; margin-bottom: 20px; }
+  .badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .badge { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; }
+  .badge.conf { background: #e8f0fe; color: #1a56db; }
+  .badge.year { background: #e8f7e8; color: #166534; }
+  .badge.draft { background: #fef3c7; color: #92400e; }
+
+  /* 섹션 */
+  .section { margin-bottom: 48px; scroll-margin-top: 24px; }
+  .section h2 { font-size: 17px; font-weight: 700; color: #0d1f33; border-left: 4px solid #1a56db; padding-left: 14px; margin-bottom: 20px; font-family: 'Noto Sans KR', sans-serif; }
+  .section h3 { font-size: 15px; font-weight: 600; color: #1a3a5a; margin: 24px 0 12px; font-family: 'Noto Sans KR', sans-serif; }
+  .section h4 { font-size: 13px; font-weight: 600; color: #2a5a8a; margin: 16px 0 8px; font-family: 'Noto Sans KR', sans-serif; }
+  .section p { margin-bottom: 14px; font-size: 14.5px; text-align: justify; }
+
+  /* Abstract */
+  .abstract-box { background: #f0f4f8; border: 1px solid #c8d8e8; border-radius: 8px; padding: 24px 28px; margin-bottom: 40px; }
+  .abstract-box h2 { font-size: 13px; letter-spacing: 1.5px; color: #3a6a9a; text-transform: uppercase; border: none; padding: 0; margin-bottom: 12px; font-family: 'Noto Sans KR', sans-serif; }
+  .abstract-box p { font-size: 13.5px; color: #2a3a4a; margin: 0; line-height: 1.9; }
+  .keywords { margin-top: 14px; font-size: 12.5px; color: #3a5a7a; }
+  .keywords strong { color: #1a3a5a; }
+
+  /* 표 */
+  .table-wrap { overflow-x: auto; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-family: 'Noto Sans KR', sans-serif; }
+  th { background: #1e2a3a; color: #d0dcea; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 12px; }
+  td { padding: 9px 14px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) { background: #f5f8fb; }
+  tr:hover { background: #eaf0f8; }
+  .caption { text-align: center; font-size: 12px; color: #5a7a9a; margin-top: 6px; font-style: italic; font-family: 'Noto Sans KR', sans-serif; }
+
+  /* 코드/수식 */
+  .code-block { background: #0d1117; color: #c9d1d9; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 12.5px; line-height: 1.6; margin: 16px 0; overflow-x: auto; }
+  .code-block .comment { color: #6a9153; }
+  .code-block .keyword { color: #ff7b72; }
+  .code-block .string { color: #a5d6ff; }
+  .formula { background: #f0f4f8; border: 1px solid #c8d8e8; border-radius: 6px; padding: 14px 20px; text-align: center; font-style: italic; color: #1a3a5a; margin: 16px 0; font-size: 14px; }
+
+  /* 인용 */
+  .cite { font-size: 11px; color: #1a56db; vertical-align: super; cursor: pointer; }
+  .references { font-size: 12.5px; }
+  .ref-item { padding: 8px 0; border-bottom: 1px solid #e8edf2; display: flex; gap: 10px; }
+  .ref-num { color: #1a56db; min-width: 32px; font-weight: 600; }
+  .ref-text { color: #2a3a4a; line-height: 1.6; }
+
+  /* 하이라이트 박스 */
+  .highlight-box { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 13.5px; }
+  .info-box { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 13.5px; }
+
+  /* 진행 상태 */
+  .status-bar { position: fixed; bottom: 0; left: 220px; right: 0; background: #1e2a3a; color: #7eb8f7; padding: 8px 20px; font-size: 12px; font-family: 'Noto Sans KR', sans-serif; display: flex; gap: 20px; z-index: 100; }
+  .status-item { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot.done { background: #22c55e; }
+  .dot.wip { background: #f59e0b; }
+  .dot.todo { background: #4a6080; }
+
+  /* 아키텍처 다이어그램 */
+  .arch-diagram { background: #0d1117; border-radius: 10px; padding: 24px; margin: 20px 0; color: #c9d1d9; font-family: 'Courier New', monospace; font-size: 12px; line-height: 2; text-align: center; }
+  .arch-diagram .box { display: inline-block; border: 1px solid #3a5a7a; padding: 4px 14px; border-radius: 4px; margin: 2px; }
+  .arch-diagram .box.red { border-color: #ff7b72; color: #ff7b72; }
+  .arch-diagram .box.blue { border-color: #7eb8f7; color: #7eb8f7; }
+  .arch-diagram .box.green { border-color: #56d364; color: #56d364; }
+  .arch-diagram .arrow { color: #6a9153; }
+
+  @media (max-width: 768px) {
+    nav { display: none; }
+    main { margin-left: 0; padding: 24px 20px; }
+    .status-bar { left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 네비게이션 -->
+<nav>
+  <h3>목차</h3>
+  <a href="#abstract"><span class="section-num">—</span>Abstract</a>
+  <a href="#s1"><span class="section-num">1.</span>서론</a>
+  <a href="#s2"><span class="section-num">2.</span>관련 연구</a>
+  <a href="#s3"><span class="section-num">3.</span>위협 모델</a>
+  <a href="#s4"><span class="section-num">4.</span>시스템 설계</a>
+  <a href="#s4-1" style="padding-left:20px; font-size:12px;">4.1 전체 아키텍처</a>
+  <a href="#s4-2" style="padding-left:20px; font-size:12px;">4.2 행동 이력 추적기</a>
+  <a href="#s4-3" style="padding-left:20px; font-size:12px;">4.3 적응형 공격 탐지기</a>
+  <a href="#s4-4" style="padding-left:20px; font-size:12px;">4.4 Qwen 14B 엔진</a>
+  <a href="#s5"><span class="section-num">5.</span>실험 설계</a>
+  <a href="#s5-1" style="padding-left:20px; font-size:12px;">5.1 환경 구성</a>
+  <a href="#s5-2" style="padding-left:20px; font-size:12px;">5.2 데이터셋</a>
+  <a href="#s5-3" style="padding-left:20px; font-size:12px;">5.3 평가 지표</a>
+  <a href="#s6"><span class="section-num">6.</span>실험 결과</a>
+  <a href="#s7"><span class="section-num">7.</span>논의</a>
+  <a href="#s8"><span class="section-num">8.</span>결론</a>
+  <a href="#refs"><span class="section-num">—</span>참고문헌</a>
+</nav>
+
+<!-- 본문 -->
+<main>
+
+<!-- 헤더 -->
+<div class="paper-header">
+  <h1>행동 증거 기반 적응형 방어 설계의<br>로컬 예비 검증과 반례 분석</h1>
+  <div class="subtitle">A Local Pilot and Counterexample Analysis of Evidence-Grounded Adaptive Defense</div>
+  <div class="authors">저자 (Author)</div>
+  <div class="affiliation">소속 기관 · 이메일</div>
+  <div class="badges">
+    <span class="badge draft">실측 예비 검증 반영 보완본</span>
+    <span class="badge year">2026</span>
+    <span class="badge conf">제출 대상: 한국정보보호학회 / IEEE Access</span>
+  </div>
+</div>
+
+<!-- Abstract -->
+<div class="abstract-box" id="abstract"><h2>Abstract — 실측 예비 검증</h2><p>LLM 행동 기반 방어 시스템 초안의 근거를 보완하기 위해, 자체 가상 웹사이트의 방어 구성요소 제거 실험과 행동 규칙의 반례 재생을 수행했다. 실제 HTTP 요청 1,280건은 고정 사례 16개를 8개 방어 조합에서 10회 반복한 것이다. 모든 방어를 적용하면 공격 결과 0/80, 정상 대조 유지 80/80이 관측됐다. XSS는 미인코딩 반사를 검사했으며 브라우저 실행을 측정하지 않았다. 별도 합성 특징 재생에서는 정상 인코딩 변경·권한 오류 반복·공유 IP의 오경보와 IP 회전의 이력 단절을 확인했다. Qwen 등 LLM은 호출하지 않았으며 본 결과는 전체 LBADS나 공개 IDS 데이터셋의 성능 검증이 아니다.</p></div>
+
+<!-- 1. 서론 -->
+<div class="section" id="s1"><h2>1. 서론 — 예비 검증의 연구 질문</h2><p>원 초안의 Qwen 기반 행동 분석 설계를 발전시키기 위해 (RQ1) 요청 경로에서 검증된 방어 패치가 공격 결과를 바꾸는가, (RQ2) 차단 피드백의 인과 순서를 요구하면 정상 기법 변경의 오경보를 줄일 수 있는가, (RQ3) IP와 행위자 식별 단위의 차이가 탐지 이력을 어떻게 끊는가를 검토한다.</p><p>이번 공헌은 재현 가능한 로컬 예비 실험과 설계 반례이다. LLM의 추가 성능, 공개 데이터셋 우위, 운영 수준 강건성은 향후 검증 대상이다.</p></div>
+
+<!-- 2. 관련 연구 -->
+<div class="section" id="s2"><h2>2. 관련 연구 — 비교 범위</h2><p>원문을 확인한 ZERO-APT [2]는 Windows Server 2022 post-exploitation 환경에서의 폐루프 공격자·방어자·판정자 프레임워크이다. Hybrid LLM-IDS [3]는 GPT-2를 결합한 IDS이며, SHIELD [5]는 호스트 로그 기반 분석이다. AMDS [7]는 앙상블 기반 공격 유형별 탐지 전략과 제한된 적응형 white-box 변형을 다룬다. 이 결과를 본 로컬 웹 실험의 직접 비교군 실측치로 합산하지 않는다.</p><p>본 예비 검증의 차별점은 공격 성능 우월성의 입증이 아니라, 이전 차단과 기법 변경의 인과 조건 및 식별 단위를 분리해 설계 반례를 재현하고 요청 경로의 실제 방어 패치를 조합별로 확인한다는 데 있다. [1], [6], [8]은 원문 미검증 상태이며 관련 수치를 확정 주장으로 유지하지 않는다.</p></div>
+
+<!-- 3. 위협 모델 -->
+<div class="section" id="s3"><h2>3. 위협 모델과 평가 범위</h2><p>HTTP 실험은 소유한 loopback 가상 사이트의 SQL 인젝션, XSS 미인코딩 반사, IDOR만 포함한다. 공격 입력은 고정되어 있으며 LLM이 생성하지 않았다. 행동 실험은 생성기가 제공한 의심 여부·기법·차단 결과·가상 시간·IP·신뢰 세션 특징의 상태 기계 재생이다.</p><p>분산 IP는 실제 인터넷 호스트가 아니라 재생 특징이다. 시간 기반 시나리오도 24시간 실운영이 아니다. DoS, 경로 탐색, 무차별 대입의 실제 공격 실험은 포함하지 않는다.</p></div>
+
+<!-- 4. 시스템 설계 -->
+<div class="section" id="s4"><h2>4. 설계 보완안</h2><h3 id="s4-1">4.1 저지연 실행 경로와 비동기 분석 경로</h3><p>현재 구현은 SQL 바인딩·문맥별 출력 인코딩·객체 소유권 검사를 즉시 적용한다. 선택적 LLM은 이후 로그를 분석하는 비동기 경로로 분리하는 설계를 제안한다. 비동기 LLM 자체의 효과는 이번에 구현·측정하지 않았다.</p><h3 id="s4-2">4.2 식별 단위와 위험도</h3><p>IP 이력과 서버가 검증한 세션 이력을 구분한다. 세션 회전·로그인 전 사용자·NAT의 불확실성을 별도 기록해야 한다. 기존 Risk의 입력 단위가 정해지지 않아 θ=70을 재현할 수 없다. 개선식 Risk=100·Σwᵢzᵢ, zᵢ∈[0,1]는 후속 제안이며 정규화·가중치·임계값을 검증 세트에서 확정해야 한다.</p><h3 id="s4-3">4.3 차단 증거와 기법 변경의 인과 조건</h3><p>이전 의심 요청의 차단 기록과 현재 의심 요청의 다른 기법을 함께 요구한다. 단순 인코딩 다양성이나 정상 권한 오류 반복만으로 적응형 공격을 단정하지 않는다. 요청 결과는 해당 요청 판단 이후에 이력에 추가한다.</p><h3 id="s4-4">4.4 LLM 역할과 미검증 사항</h3><p>Qwen 및 실시간 Codex API 호출은 0회이다. 코드·해설은 Codex가 미리 작성했다. 따라서 이번 결과로 Qwen의 추론 지연이나 탐지 향상을 주장하지 않는다. LLM 자체 보고 confidence는 보정 확률이 아니며 후속 검증이 필요하다.</p></div>
+
+<!-- 5. 실험 설계 -->
+<div class="section" id="s5"><h2>5. 실험 설계 — 실제 실행 환경</h2><h3 id="s5-1">5.1 환경</h3><p>Windows 11, Python 3.13.3 표준 HTTP 서버·SQLite 메모리 DB를 사용했다. 그래프는 matplotlib으로 생성했다. Ubuntu, Docker, Nginx, DVWA 또는 GPU 추론 환경을 이번 결과의 환경으로 기재하지 않는다.</p><h3 id="s5-2">5.2 입력과 반복</h3><p>HTTP 고정 사례 16개(공격 8·정상 대조 8), 방어 8조합, 10회 반복이다. 행동 재생은 7개 고정 시나리오에 시작 시간만 바꾼 30 seed를 적용했다. 반복을 독립 표본으로 해석하지 않는다. 공개 IDS 데이터셋과 10,000건 자체 데이터셋은 이번에 사용하지 않았다.</p><h3 id="s5-3">5.3 지표</h3><p>HTTP 공격 결과, 정상 대조 유지, 로컬 응답 p50/p95와 시나리오 단위 후보 경보를 측정했다. ATD는 기법 변경 요청을 1로 세며 미탐 수를 함께 보고한다. 전체 LBADS의 DR/FPR/F1, 운영 처리량과 LLM 지연은 측정하지 않았다.</p></div>
+
+<!-- 6. 실험 결과 (예비) -->
+<div class="section" id="s6"><h2>6. 실측 예비 결과</h2><h3>6.1 실제 HTTP 구성요소 제거 실험</h3><p>가상 관리자 인증·타인 문서 조회·XSS 미인코딩 반사 8종과 정상 대조 8종을 자체 loopback 서버에서 실행했다. 000은 방어 없음, 111은 세 방어 모두 적용이다. 각 비트는 SQL 바인딩, 출력 인코딩, 문서 소유권 검사 순서다.</p><table><thead><tr><th>SQL/XSS/IDOR 방어</th><th>공격 성공·XSS 반사</th><th>정상 대조 유지</th><th>HTTP p50 ms</th><th>HTTP p95 ms</th></tr></thead><tbody><tr><td>000</td><td>80/80</td><td>80/80</td><td>0.947</td><td>11.554</td></tr><tr><td>001</td><td>70/80</td><td>80/80</td><td>0.957</td><td>8.301</td></tr><tr><td>010</td><td>50/80</td><td>80/80</td><td>1.068</td><td>13.423</td></tr><tr><td>011</td><td>40/80</td><td>80/80</td><td>1.053</td><td>14.501</td></tr><tr><td>100</td><td>40/80</td><td>80/80</td><td>1.014</td><td>1.694</td></tr><tr><td>101</td><td>30/80</td><td>80/80</td><td>1.038</td><td>13.704</td></tr><tr><td>110</td><td>10/80</td><td>80/80</td><td>0.960</td><td>8.925</td></tr><tr><td>111</td><td>0/80</td><td>80/80</td><td>1.000</td><td>15.843</td></tr></tbody></table><h3>6.2 행동 규칙 반례 재생</h3><p>적응형 3종과 정상 반례 4종을 평가했다. 현재 요청의 결과를 사전에 쓰지 않고 이전 요청의 차단 결과만 참조한다. ATD는 최초 기법 변경 요청을 1로 세며 미탐은 별도 표시한다. 초안형 규칙은 최종 LLM 판단이 아니라 분석 후보를 만드는 규칙이다.</p><table><thead><tr><th>후보 분석 트리거</th><th>적응형 경보 발생</th><th>정상 경보 발생</th><th>적응형 미탐</th><th>탐지 건 ATD</th><th>기법 변경 전 경보</th></tr></thead><tbody><tr><td>초안형 IP 규칙</td><td>60/90</td><td>90/120</td><td>30</td><td>1</td><td>0</td></tr><tr><td>차단 증거 + 기법 변경 / IP</td><td>60/90</td><td>0/120</td><td>30</td><td>1</td><td>0</td></tr><tr><td>차단 증거 + 기법 변경 / 신뢰 세션</td><td>90/90</td><td>0/120</td><td>0</td><td>1</td><td>0</td></tr><tr><td>현재 의심 특징만 / 이력 없음</td><td>90/90</td><td>0/120</td><td>0</td><td>1</td><td>90</td></tr></tbody></table><p><strong>해석 한계:</strong> HTTP는 고정 사례 16개를 8개 방어 구성에서 10회 반복했다. 1,280개의 독립 공격이 아니다. XSS는 미인코딩 태그 반사 지표이며 브라우저 실행 성공률이 아니다. 행동 재생은 7개 고정 특징 시나리오에 시작 시간만 바꾼 30개 seed를 적용한 것이다. 의심 여부와 기법 특징을 이상적으로 공급하므로 완벽한 결과도 현실 탐지 정확도의 증거가 아니다. 이력 없는 의심 특징 비교군도 경보 발생 지표에서 동일한 결과를 내므로, 이 데이터만으로 행동 이력의 추가 탐지 효과를 입증할 수 없다. 해당 비교군은 기법 변경 전에도 경보가 나므로 악성 요청 판별과 적응행위 판별을 분리해야 한다. Qwen, Snort, RF, Docker, NSL-KDD, CSE-CIC-IDS2018은 이번에 실행하지 않았다.</p><img src="pilot_results.png" alt="실측 HTTP 방어 조합과 합성 행동 반례 비교" style="width:100%"></div>
+
+<!-- 7. 논의 -->
+<div class="section" id="s7"><h2>7. 논의와 한계</h2><p><strong>해석 한계:</strong> HTTP는 고정 사례 16개를 8개 방어 구성에서 10회 반복했다. 1,280개의 독립 공격이 아니다. XSS는 미인코딩 태그 반사 지표이며 브라우저 실행 성공률이 아니다. 행동 재생은 7개 고정 특징 시나리오에 시작 시간만 바꾼 30개 seed를 적용한 것이다. 의심 여부와 기법 특징을 이상적으로 공급하므로 완벽한 결과도 현실 탐지 정확도의 증거가 아니다. 이력 없는 의심 특징 비교군도 경보 발생 지표에서 동일한 결과를 내므로, 이 데이터만으로 행동 이력의 추가 탐지 효과를 입증할 수 없다. 해당 비교군은 기법 변경 전에도 경보가 나므로 악성 요청 판별과 적응행위 판별을 분리해야 한다. Qwen, Snort, RF, Docker, NSL-KDD, CSE-CIC-IDS2018은 이번에 실행하지 않았다.</p><h2>후속 본 실험 계획</h2><p>현재는 논문 주장의 전제와 방어 패치를 확인한 예비 실험이다. 다음 단계는 아래와 같다.</p>
+<ol><li>고정 재생 공격과 차단 응답에 따라 다음 행동을 바꾸는 정책 공격자를 동일 예산으로 비교한다. 정책은 결정 규칙부터 시작하고, LLM 공격자 여부를 별도 조건으로 둔다. AI가 공격을 생성했다고 가정하지 않는다.</li>
+<li>무상태 정규화 룰, 시간 이력 룰, 증거 기반 이력, 동기 LLM, 비동기 LLM을 같은 요청 로그와 동일 예산으로 비교한다. 현재 미구현 조건을 결과 표에 실측으로 넣지 않는다.</li>
+<li>공격 템플릿·행위자·캠페인 단위로 개발/검증/최종 평가를 분리한다. 별도 작성자가 만든 정상 트래픽과 보류 공격 템플릿을 포함해 데이터 누출을 줄인다.</li>
+<li>정확한 탐지 레이블과 공격 성공 여부를 분리하여 DR/FPR/F1, 미탐 포함 ATD, 시간 지연, 정상 요청 p50/p95/p99, LLM 호출률·타임아웃·큐 대기·토큰 비용·정상 기능 손상을 함께 평가한다. 캠페인 단위 신뢰구간을 사용한다.</li>
+<li>기법 특징 오염, 세션 회전, 동일 IP 다중 사용자, 24시간 경계, 모델 출력 오류, 로그 안의 프롬프트 인젝션을 평가한다. LLM 출력은 검증된 대응 식별자만 허용한다.</li></ol></div>
+
+<!-- 8. 결론 -->
+<div class="section" id="s8"><h2>8. 결론 — 확인한 범위</h2><p>세 방어가 모두 적용된 구성에서 고정 공격 사례 8종을 각 10회 반복했을 때 SQL·IDOR 성공 및 XSS 미인코딩 반사는 0/80이었고 정상 대조는 80/80 유지됐다. 이는 교육용 가상 대상의 제한된 예비 검증이며 공격 전체의 차단 성능이 아니다.</p><p>행동 규칙 반례는 기법 다양성만으로는 악의적 적응을 구분하기 어렵고 IP만으로는 행위자 이력이 단절될 수 있음을 보여준다. 인과 증거·세션 식별을 보완한 규칙의 이상화된 성공을 현실 성능으로 일반화할 수 없다. LLM 추가 효과와 공개 데이터셋 평가를 수행하기 전에는 기존 예정치 94.2%, 3.8%, 11.3%p, ATD 2.3회를 성과로 주장하지 않는다.</p></div>
+
+<!-- 참고문헌 -->
+<div class="section" id="refs">
+  <h2>참고문헌 (원 초안 목록 · 부분 확인)</h2><h2>원문과 참고문헌 점검</h2><p>다운로드 폴더의 원본은 수정하지 않았다. 아래 네 참고문헌의 제목·저자와 초록을 원 출처에서 확인했으나, 초안의 모든 주장과 수치를 검증한 것은 아니다.</p>
+<ul><li><a href="https://arxiv.org/abs/2606.05567">ZERO-APT</a>: Windows Server 2022 post-exploitation 실험이다. 웹 방어 실험의 직접 비교 수치로 합치면 안 된다.</li>
+<li><a href="https://arxiv.org/abs/2507.07413">Hybrid LLM-Enhanced IDS</a>: 초록의 6.3% 정확도 개선·9.0% false positive 감소를 확인했으며, 본 환경에서 재현하지 않았다.</li>
+<li><a href="https://arxiv.org/abs/2507.10873">SHIELD</a>: 호스트 로그 평가이다. LBADS 웹 환경과 평가 단위가 다르다.</li>
+<li><a href="https://arxiv.org/abs/2603.00859">AMDS</a>: 두 가지 adaptive white-box 변형에 국한된 결과라는 원문의 제한을 함께 적어야 한다.</li>
+<li><a href="https://www.unb.ca/cic/datasets/nsl.html">NSL-KDD 공식 안내</a>와 <a href="https://www.unb.ca/cic/datasets/ids-2018.html">CSE-CIC-IDS2018 공식 안내</a>: 이번에 다운로드·실행하지 않았다. CIC-IDS2018은 네트워크 캡처·시스템 로그·흐름 특징을 제공하므로 실제로 사용할 아티팩트와 파서를 구체적으로 지정해야 한다.</li></ul>
+<p>초안 [1], [6], [8]은 이번 작업에서 원문 검증하지 않았다. 특히 [6] DOI는 <code>10.1016/j.eswa.2025</code>로만 기재되어 식별 정보 보완이 필요하다.</p>
+  <div class="references">
+    <div class="ref-item">
+      <span class="ref-num">[1]</span>
+      <span class="ref-text">Quaye, S., Dawson, M., Hoxha, E. (2026). "A Taxonomy of Intelligent Intrusion Detection Systems For Cybersecurity Using Large Language Models And Agent-Based Artificial Intelligence." <em>Knowledge-Based Organization</em>, Vol. 32(3). DOI: 10.2478/kbo-2026-0076</span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[2]</span>
+      <span class="ref-text">Zheng, A., Zhu, T. (2026). "ZERO-APT: A Closed-Loop Adversarial Framework for LLM-Driven Automated Penetration Testing under Intelligent Defense." <em>arXiv:2606.05567</em></span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[3]</span>
+      <span class="ref-text">Al-Hammouri, M. F., et al. (2025). "Hybrid LLM-Enhanced Intrusion Detection for Zero-Day Threats in IoT Networks." <em>arXiv:2507.07413</em></span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[4]</span>
+      <span class="ref-text">Tavallaee, M., et al. (2009). "A Detailed Analysis of the KDD CUP 99 Data Set." <em>IEEE CISDA 2009</em>. [NSL-KDD Dataset]</span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[5]</span>
+      <span class="ref-text">Sun, D., et al. (2025). "From Alerts to Intelligence: A Novel LLM-Aided Framework for Host-based Intrusion Detection (SHIELD)." <em>arXiv:2507.10873</em></span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[6]</span>
+      <span class="ref-text">"An explainable and adaptive Internet of Things intrusion detection system supported by Large Language Models (EADL-IDS)." <em>ScienceDirect, 2026</em>. DOI: 10.1016/j.eswa.2025</span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[7]</span>
+      <span class="ref-text">"AMDS: Attack-Aware Multi-Stage Defense System for Network Intrusion Detection with Two-Stage Adaptive Weight Learning." <em>arXiv:2603.00859, 2026</em></span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[8]</span>
+      <span class="ref-text">"Adversarial Defense in Cybersecurity: A Systematic Review of GANs for Threat Detection and Mitigation." <em>arXiv:2509.20411, 2025</em></span>
+    </div>
+    <div class="ref-item">
+      <span class="ref-num">[9]</span>
+      <span class="ref-text">Sharafaldin, I., et al. (2018). "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization." <em>ICISSP 2018</em>. [CSE-CIC-IDS2018]</span>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- 진행 상태 바 -->
+<div class="status-bar">
+  <div class="status-item"><div class="dot done"></div> 1. 관련 논문 조사 완료</div>
+  <div class="status-item"><div class="dot done"></div> 2. 논문 구조 확정</div>
+  <div class="status-item"><div class="dot done"></div> 3. 실험 코드</div>
+  <div class="status-item"><div class="dot done"></div> 4. 그래프 코드</div>
+  <div class="status-item"><div class="dot done"></div> 5. 논문 초안</div>
+  <div class="status-item"><div class="dot wip"></div> 6. 데이터셋 연동</div>
+  <div class="status-item"><div class="dot todo"></div> 7. 도커 패키징</div>
+</div>
+
+<script>
+// 스크롤 시 현재 섹션 하이라이트
+const sections = document.querySelectorAll('.section, .abstract-box');
+const navLinks = document.querySelectorAll('nav a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 60) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+</script>
+</body>
+</html>

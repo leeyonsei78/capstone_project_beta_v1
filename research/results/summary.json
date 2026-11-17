@@ -1,0 +1,310 @@
+{
+  "created_at": "2026-11-15T12:59:00.395659+00:00",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "llm_calls": 0,
+    "http_target": "loopback ephemeral port, own training server"
+  },
+  "seeds": {
+    "http": 20261115,
+    "behavior": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "scope": "local synthetic pilot, not full LBADS reproduction",
+  "http": [
+    {
+      "config_sql_xss_idor": "000",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 80,
+      "attack_success_rate": 1.0,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 0.9468,
+      "p95_http_ms": 11.5542
+    },
+    {
+      "config_sql_xss_idor": "001",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 70,
+      "attack_success_rate": 0.875,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 0.9566,
+      "p95_http_ms": 8.301
+    },
+    {
+      "config_sql_xss_idor": "010",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 50,
+      "attack_success_rate": 0.625,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 1.0683,
+      "p95_http_ms": 13.4228
+    },
+    {
+      "config_sql_xss_idor": "011",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 40,
+      "attack_success_rate": 0.5,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 1.0531,
+      "p95_http_ms": 14.5012
+    },
+    {
+      "config_sql_xss_idor": "100",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 40,
+      "attack_success_rate": 0.5,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 1.0144,
+      "p95_http_ms": 1.6937
+    },
+    {
+      "config_sql_xss_idor": "101",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 30,
+      "attack_success_rate": 0.375,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 1.0383,
+      "p95_http_ms": 13.7041
+    },
+    {
+      "config_sql_xss_idor": "110",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 10,
+      "attack_success_rate": 0.125,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 0.9598,
+      "p95_http_ms": 8.9254
+    },
+    {
+      "config_sql_xss_idor": "111",
+      "attack_trials": 80,
+      "attack_success_or_raw_xss_reflection": 0,
+      "attack_success_rate": 0.0,
+      "control_trials": 80,
+      "control_preserved": 80,
+      "p50_http_ms": 0.9999,
+      "p95_http_ms": 15.8431
+    }
+  ],
+  "behavior": [
+    {
+      "policy": "draft_heuristic_ip",
+      "tp": 60,
+      "fn": 30,
+      "fp": 90,
+      "tn": 30,
+      "adaptive_episode_recall": 0.6666666666666666,
+      "benign_episode_fpr": 0.75,
+      "f1": 0.5,
+      "mean_atd_detected_only": 1,
+      "episodes_with_pre_onset_alarm": 0,
+      "undetected_episodes": 30,
+      "p95_cpu_us": 1.4,
+      "strata": {
+        "adaptive_rotating_ip": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "adaptive_single_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_slow": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_authorization_retries": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_encoding_diversity": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_expired_history": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_shared_nat": {
+          "episodes": 30,
+          "alarms": 30
+        }
+      }
+    },
+    {
+      "policy": "causal_evidence_ip",
+      "tp": 60,
+      "fn": 30,
+      "fp": 0,
+      "tn": 120,
+      "adaptive_episode_recall": 0.6666666666666666,
+      "benign_episode_fpr": 0.0,
+      "f1": 0.8,
+      "mean_atd_detected_only": 1,
+      "episodes_with_pre_onset_alarm": 0,
+      "undetected_episodes": 30,
+      "p95_cpu_us": 1.0,
+      "strata": {
+        "adaptive_rotating_ip": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "adaptive_single_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_slow": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_authorization_retries": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_encoding_diversity": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_expired_history": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_shared_nat": {
+          "episodes": 30,
+          "alarms": 0
+        }
+      }
+    },
+    {
+      "policy": "causal_evidence_trusted_session",
+      "tp": 90,
+      "fn": 0,
+      "fp": 0,
+      "tn": 120,
+      "adaptive_episode_recall": 1.0,
+      "benign_episode_fpr": 0.0,
+      "f1": 1.0,
+      "mean_atd_detected_only": 1,
+      "episodes_with_pre_onset_alarm": 0,
+      "undetected_episodes": 0,
+      "p95_cpu_us": 0.9,
+      "strata": {
+        "adaptive_rotating_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_single_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_slow": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_authorization_retries": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_encoding_diversity": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_expired_history": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_shared_nat": {
+          "episodes": 30,
+          "alarms": 0
+        }
+      }
+    },
+    {
+      "policy": "suspicion_only_no_history",
+      "tp": 90,
+      "fn": 0,
+      "fp": 0,
+      "tn": 120,
+      "adaptive_episode_recall": 1.0,
+      "benign_episode_fpr": 0.0,
+      "f1": 1.0,
+      "mean_atd_detected_only": 1,
+      "episodes_with_pre_onset_alarm": 90,
+      "undetected_episodes": 0,
+      "p95_cpu_us": 0.3,
+      "strata": {
+        "adaptive_rotating_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_single_ip": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "adaptive_slow": {
+          "episodes": 30,
+          "alarms": 30
+        },
+        "benign_authorization_retries": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_encoding_diversity": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_expired_history": {
+          "episodes": 30,
+          "alarms": 0
+        },
+        "benign_shared_nat": {
+          "episodes": 30,
+          "alarms": 0
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "app.py": "a18a6d146bdaac9e038beca368b6b6c048a606d2f4d30c808c8cc3ab2748fe9c",
+    "workflow.py": "8062497e8706ed559a91e8d283f85689b47d96adee48afe1e1fa43d50f30c39a",
+    "experiments/run_study.py": "a22fd80612148814c9db28acbfe25a443be0a4d0722dfff832112b15d1821781"
+  }
+}

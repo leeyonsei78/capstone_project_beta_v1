@@ -1,0 +1,75 @@
+{
+  "model": "qwen2.5-coder:14b",
+  "repeats": 12,
+  "measured_p_touch_noisy": 0.3,
+  "detection": {
+    "benign": {
+      "rule": {
+        "k": 0,
+        "n": 12,
+        "rate": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.2425007574992425
+      },
+      "llm": {
+        "k": 0,
+        "n": 6,
+        "rate": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.3903430336530645
+      },
+      "rule_median_latency": null
+    },
+    "noisy": {
+      "rule": {
+        "k": 12,
+        "n": 12,
+        "rate": 1.0,
+        "ci_lo": 0.7574992425007574,
+        "ci_hi": 1.0
+      },
+      "llm": {
+        "k": 6,
+        "n": 6,
+        "rate": 1.0,
+        "ci_lo": 0.6096569663469354,
+        "ci_hi": 0.9999999999999999
+      },
+      "rule_median_latency": 2
+    },
+    "stealthy": {
+      "rule": {
+        "k": 12,
+        "n": 12,
+        "rate": 1.0,
+        "ci_lo": 0.7574992425007574,
+        "ci_hi": 1.0
+      },
+      "llm": {
+        "k": 1,
+        "n": 6,
+        "rate": 0.16666666666666666,
+        "ci_lo": 0.03005258587173032,
+        "ci_hi": 0.563509436563646
+      },
+      "rule_median_latency": 1
+    },
+    "credstuff": {
+      "rule": {
+        "k": 0,
+        "n": 12,
+        "rate": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.2425007574992425
+      },
+      "llm": {
+        "k": 0,
+        "n": 6,
+        "rate": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.3903430336530645
+      },
+      "rule_median_latency": null
+    }
+  }
+}

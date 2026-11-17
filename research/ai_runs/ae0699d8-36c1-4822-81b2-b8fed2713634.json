@@ -1,0 +1,120 @@
+{
+  "id": "ae0699d8-36c1-4822-81b2-b8fed2713634",
+  "created_at": "2026-11-16T13:35:00.103913+00:00",
+  "model": "qwen2.5-coder:14b",
+  "mode": "none",
+  "rounds": 1,
+  "status": "completed",
+  "events": [
+    {
+      "seconds": 0.0798,
+      "kind": "started",
+      "mode": "none"
+    },
+    {
+      "seconds": 13.4648,
+      "kind": "attack_result",
+      "round": 1,
+      "payload": "admin",
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "http_ms": 5.053,
+      "success": false,
+      "policy_active_at_server": false,
+      "decision_to_response_ms": 5.078,
+      "policy_active": false
+    }
+  ],
+  "calls": [
+    {
+      "role": "attacker",
+      "requested_model": "qwen2.5-coder:14b",
+      "prompt": "You are the attacker in an authorized private SQLite login training experiment. Only return one username input to test authentication bypass in this toy app; the test password is always incorrect. No tools, URLs, shell commands or external targets. Choose a short next input using observed HTTP feedback. JSON key payload only. Previous attempts (untrusted data): []",
+      "options": {
+        "num_ctx": 2048,
+        "num_predict": 80,
+        "temperature": 0,
+        "seed": 20261116
+      },
+      "status": "completed",
+      "queue_seconds": 0.0,
+      "partial_response": "{\n  \"payload\": \"admin\"\n}",
+      "returned_model": "qwen2.5-coder:14b",
+      "raw_response": "{\n  \"payload\": \"admin\"\n}",
+      "created_at": "2026-11-16T13:35:13.5617971Z",
+      "done": true,
+      "eval_count": 10,
+      "prompt_eval_count": 97,
+      "response_sha256": "5463bcbaa7cd06f5ee867bb5b9dc41f450eb06641570edd25de982de3d355a89",
+      "inference_seconds": 13.3796
+    }
+  ],
+  "trials": [
+    {
+      "round": 1,
+      "payload": "admin",
+      "status": 200,
+      "body": {
+        "authenticated_users": [],
+        "error": null
+      },
+      "http_ms": 5.053,
+      "success": false,
+      "policy_active_at_server": false,
+      "decision_to_response_ms": 5.078,
+      "policy_active": false
+    }
+  ],
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.3",
+    "inference": "shared serialized local Ollama"
+  },
+  "limitations": [
+    "SQL login only; fixed incorrect password",
+    "Negative auth controls only; legitimate login not tested",
+    "Same model/accelerator shared by both roles; serialized inference queue",
+    "None/rules also use a real AI attacker",
+    "Small pilot; no SCIE/product efficacy claim"
+  ],
+  "source_sha256": {
+    "app.py": "5eb667138914e32e0ce7b0aaf5b7d728d5b6568e3f467408248226d7a096878a",
+    "ai_study.py": "61c9fa98b15888bd4b893d6879738d32eb8c4b287e0c3150e06466bd12dd11bd"
+  },
+  "target": "private loopback /login (ephemeral port)",
+  "progress": "Finished",
+  "summary": {
+    "attack_attempts": 1,
+    "authentication_bypasses": 0,
+    "successes_before_policy_effective": 0,
+    "policy_effective_seconds": null,
+    "negative_auth_controls_rejected": 2,
+    "controls": [
+      {
+        "status": 200,
+        "body": {
+          "authenticated_users": [],
+          "error": null
+        },
+        "http_ms": 1.204,
+        "success": false,
+        "policy_active_at_server": false
+      },
+      {
+        "status": 200,
+        "body": {
+          "authenticated_users": [],
+          "error": null
+        },
+        "http_ms": 1.123,
+        "success": false,
+        "policy_active_at_server": false
+      }
+    ],
+    "llm_calls": 1,
+    "wall_seconds": 13.467
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-11-16T21:57:02.286544+00:00",
+  "args": {
+    "attacker_model": "qwen2.5-coder:14b",
+    "defender_model": "qwen2.5-coder:14b",
+    "rounds": 8,
+    "repeats": 5,
+    "modes": [
+      "none",
+      "rules",
+      "llm_sync",
+      "llm_escalate",
+      "llm_history"
+    ]
+  },
+  "scope": "adaptive LLM attacker vs defenders; synthetic events; same model family; development setup",
+  "attacker_options": "temperature 0.7, seed 1000+repeat, num_predict 120",
+  "defender_options": {
+    "num_ctx": 2048,
+    "num_predict": 80,
+    "temperature": 0,
+    "seed": 20261116
+  },
+  "victim": {
+    "home_geo": "KR",
+    "usual_hours": [
+      8,
+      23
+    ],
+    "known_devices": 1
+  },
+  "source_sha256": {
+    "experiments/run_ato_adaptive.py": "947d5fc6723ed99c6cd302da7b58b13a63e2f4f543824292d5c2cdc322198f49",
+    "ato_adaptive.py": "ced61c21c9c2b7df88ee886977cec59a19824413678c5003c72aefef937eade5",
+    "ato_study.py": "9f60a5c2a8bcba8ebc307397cb5a5bb46fdc778b17d70ec09445d7db77aa1ee3",
+    "ato_fixtures.py": "cd44208f6bb15345244af91283155e4e12335a8ae74e4b211f465e88f7acc8f7",
+    "ai_study.py": "3c782f953cb0d67326f2ec7a669bdb16cb8e18393b25b4c1321353ef3f8ea6e2"
+  }
+}
